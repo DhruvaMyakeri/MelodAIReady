@@ -8,12 +8,21 @@ from model import InstrumentClassifier
 from dataset import IDX2LABEL, NUM_CLASSES
 from features import extract_features
 
+import argparse
+
+# ─── PARSE ARGS ─────────────────────────────────────────
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--audio", default="test2.mp3", help="Input audio file")
+parser.add_argument("--output", default="output2.json", help="Output JSON file")
+parser.add_argument("--model", default="./checkpoints/best_model.pt", help="Path to model checkpoint")
+args = parser.parse_args()
+
 # ─── CONFIG ─────────────────────────────────────────────
 
-MODEL_PATH = "./checkpoints/best_model.pt"
-AUDIO_PATH = "test2.mp3"   # 🔥 change this
-OUTPUT_PATH = "output2.json"
-
+MODEL_PATH = args.model
+AUDIO_PATH = args.audio
+OUTPUT_PATH = args.output
 SAMPLE_RATE = 22050
 WINDOW_SIZE = 3.0
 HOP_SIZE = 1.5
@@ -108,7 +117,10 @@ for start in tqdm(range(0, len(y) - window, step)):
         "instruments": instruments,
         "num_instruments": len(instruments),
         "energy": round(features["energy"], 4),
-        "tempo": round(features["tempo"], 2)
+        "tempo": round(features["tempo"], 2),
+        "detected_note": features.get("detected_note"),
+        "dominant_frequency": round(features["dominant_frequency"], 2) if features.get("dominant_frequency") else None,
+        "chroma_mean": [round(v, 4) for v in features["chroma_mean"]] if features.get("chroma_mean") else None
     })
 
 # ─── FINAL OUTPUT ───────────────────────────────────────
