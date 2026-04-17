@@ -82,6 +82,30 @@ Navigate to the web interface, upload a song, and select an output instrument!
 
 ---
 
+## Academic References
+
+The algorithmic heuristics underpinning MelodAI's symbolic orchestration engine are deeply informed by computational musicology and cognitive science literature.
+
+**Tymoczko, D. (2006). "The Geometry of Musical Chords." *Science***
+- **Implementation:** `optimize_voice_leading()` in `expert_arranger.py`. Minimizes total semitone displacement across chord transitions by selecting the closest pitch mapping. Implements parallel 5th detection by re-voicing offending harmony voices by one octave, and scores +5 contrary motion preference when melodies diverge from bass.
+
+**Lerdahl, F. (2001). *Tonal Pitch Space*. Oxford University Press.**
+- **Implementation:** `compute_tension()` scores cluster tension evaluating tritones (+0.30), leading tones (+0.20), dominant roots (+0.15) and non-diatonic notes. Drives a tension-aware density budget expanding orchestrations on intense chords (+2 notes) and constraining releases (-1 note). Prevents dropout of leading tones to maintain harmonic pull.
+
+**Huron, D. (2006). *Sweet Anticipation: Music and the Psychology of Expectation*. MIT Press.**
+- **Implementation:** Granular stepwise motion scoring derived from Huron's distributions (0-2 semitones = +15). Executes post-leap reversal heuristics yielding bonuses for opposite motion following leaps >5 semitones. Implements dynamic melodic arch shaping across phrases to model human cadential expectation.
+
+**Narmour, E. (1990). *The Analysis and Cognition of Basic Melodic Structures*. UCP.**
+- **Implementation:** Executes an Implication-Realization process state machine within `assign_roles()` scoring continuations against directional reversals. Enforces Registral Return, heavily penalizing unrestrained register drifting.
+
+**Todd, N.P. (1992). "The Dynamics of Dynamics: A Model of Musical Expression." *JASA***
+- **Implementation:** Defines phrasing micro-timing in `apply_todd_phrasing()` (`to_midi.py`). Drives cubic phase-end ritardandos, phrase-internal temporal acceleration simulating mechanical leaning, and injects extensive phrase-end decay resonance simulating pedal artifacts.
+
+**Pearce, M.T. & Wiggins, G.A. (2006). "Expectation in Melody". *Music Perception***
+- **Implementation:** Probability lookup tables mapping contour bonuses against derived empirical interval distributions (e.g., Unisons: 0.16, Maj2: 0.20). Automatically suppresses uncontextualized tritones or major 7ths mathematically scoring statistical surprise.
+
+---
+
 ## Author
 
 **Dhruva M**
