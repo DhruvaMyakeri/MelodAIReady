@@ -34,7 +34,7 @@ from basic_pitch import ICASSP_2022_MODEL_PATH
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 
-MODEL_PATH  = "./checkpoints/best_model.pt"
+MODEL_PATH  = str(Path(__file__).parent / "checkpoints" / "best_model.pt")
 SAMPLE_RATE = 22050
 WINDOW_SIZE = 3.0
 HOP_SIZE    = 1.5
@@ -131,7 +131,7 @@ def get_notes_in_window(note_events, start_s, end_s):
 
 # ─── MAIN ────────────────────────────────────────────────────────────────────
 
-def run_demucs(audio_path, timeout=300):
+def run_demucs(audio_path, timeout=300, work_dir=None):
     """
     Run demucs --two-stems vocals on the input MP3.
     Returns the path to the no_vocals stem file.
@@ -148,7 +148,8 @@ def run_demucs(audio_path, timeout=300):
             cmd,
             timeout=timeout,
             capture_output=True,
-            text=True
+            text=True,
+            cwd=work_dir
         )
     except subprocess.TimeoutExpired:
         raise RuntimeError(
@@ -164,7 +165,8 @@ def run_demucs(audio_path, timeout=300):
 
     # Resolve output path: separated/htdemucs/<track_name>/no_vocals.wav
     audio_stem = Path(audio_path).stem
-    separated_dir = Path("separated") / "htdemucs" / audio_stem
+    base_dir = Path(work_dir) if work_dir else Path(".")
+    separated_dir = base_dir / "separated" / "htdemucs" / audio_stem
 
     # Demucs can produce .wav or .mp3 depending on version
     for ext in ["no_vocals.wav", "no_vocals.mp3"]:
