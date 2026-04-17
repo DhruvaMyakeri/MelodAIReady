@@ -1,9 +1,29 @@
-torch
-torchaudio
-torchvision
+# ── Force CPU-only PyTorch wheels (avoids ~1.3 GB of NVIDIA CUDA downloads) ───
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# ── Core ML stack ─────────────────────────────────────────────────────────────
+numpy<2
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+torchaudio==2.5.1+cpu
+
+# ── Audio / ML tools ──────────────────────────────────────────────────────────
 librosa
-numpy
-matplotlib
-scikit-learn
-tqdm
+basic-pitch[onnx]
+onnxruntime
+demucs
+pretty_midi
 soundfile
+
+# ── Music theory ──────────────────────────────────────────────────────────────
+music21
+
+# ── API ───────────────────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-multipart
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+tqdm
+scikit-learn
+matplotlib
