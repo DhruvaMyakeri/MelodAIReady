@@ -1,130 +1,87 @@
-# 🎧 Audio Instrument Intelligence System
+# 🎧 MelodAI: Audio-to-Symbolic Music Transcription Pipeline
 
-A deep learning system that analyzes audio files to detect instruments and extract meaningful audio features over time.
+A cutting-edge, end-to-end machine learning system that transforms complex, multi-instrument audio recordings (MP3/WAV) into mathematically structured, arranged MIDI scores. Now fully dockerized with an asynchronous FastAPI backend and a custom Neo-Brutalist React web interface featuring high-fidelity `Tone.js` SoundFont previews.
 
 ---
 
 ## 🚀 Overview
 
-This project converts raw audio into a structured, time-based representation:
+MelodAI goes far beyond basic instrument classification. It extracts, isolates, tracks, and synthetically reconstructs actual musical compositions from polyphonic audio tracking.
 
-Audio → Segments → Instrument Detection + Feature Extraction → Timeline
-
-Unlike basic classifiers, this system works on **real songs with multiple overlapping instruments**.
-
----
-
-## 🔥 Key Features
-
-- 🎵 Multi-instrument detection using deep learning (ResNet18)
-- 🧠 Trained with **audio mixing** to simulate real-world music
-- 📊 Sliding window segmentation (temporal analysis)
-- 🎧 Audio feature extraction:
-  - MFCC (timbre)
-  - Tempo (BPM)
-  - Energy (loudness)
-  - Spectral centroid (brightness)
-  - Chroma (pitch distribution)
-- 📈 Visualization:
-  - Instrument heatmap
-  - Timeline analysis
+**The Pipeline Flow**:
+Raw Audio → Stem Isolation → Note Event Detection → CNN Instrument Analysis → Symbolic Music Orchestration → MIDI Generation 
 
 ---
 
-## 🧠 Model Architecture
+## 🔥 Pipeline Architecture
 
-- Backbone: ResNet18 (modified for 1-channel input)
-- Input: Mel Spectrogram (128 × 128)
-- Output: Multi-label classification (28 instruments)
+1. **Stem Separation (Demucs)**: 
+   Surgically separates the input audio into distinct mixing stems (Vocals, Drums, Bass, Other/Melody) to reduce polyphonic collisions before pitch tracking.
 
----
+2. **Note Tracking (Basic Pitch)**:
+   A highly tuned Spotify neural network model scans the separated stems to extract fundamental frequencies, creating raw note sequences mapped over time.
 
-## 🗂️ Project Structure
+3. **Timbre Analysis (ResNet CNN)**:
+   A custom PyTorch ResNet18 model analyzes Mel Spectrogram windows to classify the dominant instrument in the recording, accurately assigning the correct General MIDI patches.
 
-Audio-Instruments-ML/
-│
-├── dataset.py # Data loading + augmentation + mixing
-├── model.py # CNN model (ResNet18)
-├── train.py # Training pipeline
-├── inference.py # Song analysis pipeline
-├── features.py # Audio feature extraction
-├── visualize.py # Visualization (heatmaps)
-├── requirements.txt
-├── README.md
+4. **Expert Arranger Engine**:
+   A deterministic, algorithmic rule-engine applies advanced music theory heuristics (voice-leading adjustments, density budgeting, melodic interval shaping, velocity normalization) to mathematically refine the raw transcription into sheet-music-ready structures without risking LLM quota limits or hallucinations.
+
+5. **Musical Generation**:
+   Converts the final refined JSON structures into cleanly formatted `.mid` outputs using `pretty_midi`, injecting BPM and track assignments seamlessly.
 
 ---
 
-## ⚙️ Installation
+## 🖥 The Interface
+
+MelodAI ships with a beautifully designed, **Neo-Brutalist React Web App**:
+- **Async Execution**: Long-running ML operations are submitted via a robust job queue over an async FastAPI orchestration architecture.
+- **Real-Time Polling**: The React frontend visually charts the ML pipeline progression across all stages (Demucs → Pitch → CNN → Arranging) using custom loading blocks.
+- **High-Fidelity Preview**: Custom `Tone.js` Sampler integrations dynamically fetch official General MIDI multi-gigabyte SoundFonts on the fly. Select 'Guitar', hear a Nylon Acoustic Guitar mapped directly to the generated MIDI notes overlapping your original song.
+- **Mixer**: Dual volume staging sliders allow granular mixing of the raw MP3 upload against the AI-generated MIDI for side-by-side comparison.
+
+---
+
+## ⚙️ Tech Stack
+
+**Backend (ML Pipeline):**
+- **Python 3.10**: Core pipeline glue.
+- **FastAPI / Uvicorn**: Asynchronous job handling and queue polling.
+- **PyTorch & Librosa**: Audio processing and neural network inference.
+- **Demucs & Basic Pitch**: Audio AI modeling.
+- **Pretty_MIDI**: Symbolic music formatting.
+
+**Frontend:**
+- **React 18 & Vite**: Lightning-fast web rendering.
+- **Vanilla CSS**: Fully bespoke, frameworkless Neo-Brutalist user interface.
+- **Tone.js & @tonejs/midi**: Accurate MIDI transport scheduling and browser audio synthesis.
+
+**Infrastructure:**
+- **Docker & Docker Compose**: Total system containerization mapping GPU/CPU environments synchronously with Nginx statically mapped UI routing.
+
+---
+
+## 🛠️ Quick Start
+
+The entire stack is seamlessly orchestrated via a local Docker network.
+
+1. Ensure Docker Desktop is installed.
+2. Clone the repository.
+3. Boot the environment from the root directory:
 
 ```bash
-pip install -r requirements.txt
-🏋️ Training
-python train.py
-Training Techniques Used
-🔁 Audio mixing (multi-instrument simulation)
-🎚️ Label smoothing
-🔊 Gain + noise augmentation
-⚖️ Class-balanced sampling
-🎧 Inference (Analyze a Song)
-python inference.py
-
-Modify inside file:
-
-AUDIO_PATH = "test.mp3"
-📊 Output Format
-[
-  {
-    "time": 0.0,
-    "instruments": ["Acoustic_Guitar"]
-  }
-]
-📈 Visualization
-python visualize.py
-
-Outputs:
-
-Instrument timeline heatmap
-Activity over time
-🧠 Important Insight
-
-This model performs timbre-based classification, not exact instrument detection.
-
-That means:
-
-Real Sound	Model Output
-Harmonium	Accordion
-Bright strings	Ukulele
-Guitar + effects	Acoustic_Guitar
-
-It predicts the closest known sound profile.
-
-📊 Results
-Validation F1 Score: ~0.94
-Stable temporal predictions
-Improved performance on real songs via data mixing
-⚠️ Limitations
-Trained on isolated instrument dataset
-Confusion between similar instruments (e.g., guitar vs ukulele)
-Does not perform full music transcription
-🔮 Future Improvements
-Train on real multi-instrument datasets
-Improve instrument separation
-Add pitch & chord detection
-Build full audio understanding pipeline
-💡 Why This Project Matters
-
-Most ML projects stop at classification.
-
-This project builds:
-
-Audio → Structured Intelligence → Temporal Understanding
-
-Applications:
-
-Music recommendation systems
-Audio search engines
-AI music analysis tools
-👨‍💻 Author
-
-Dhruva M
+docker-compose up --build
 ```
+
+**Port Mapping**:
+- The Neo-Brutalist Web App boots instantly to `http://localhost:3000`
+- The backend API endpoints natively map to `http://localhost:8000`
+
+### 💡 To Use:
+Navigate to the web interface, upload a song, and select an output instrument! 
+
+---
+
+## 👨‍💻 Author
+
+**Dhruva M**
