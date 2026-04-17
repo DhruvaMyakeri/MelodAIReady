@@ -1,0 +1,35 @@
+# ── Heavy data / audio files ──────────────────────────────────────────────────
+*.mp3
+*.wav
+*.flac
+*.mid
+*.json
+*.xml
+
+# ── Output / runtime artifacts ────────────────────────────────────────────────
+outputs/
+uploads/
+separated/
+runs/
+midi_outputs/
+
+# ── Training / dataset dirs ───────────────────────────────────────────────────
+dataset/
+datasets/
+data/
+
+# ── Python bytecode ───────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── VCS ───────────────────────────────────────────────────────────────────────
+.git
+.gitignore
+
+# ── Misc dev files ────────────────────────────────────────────────────────────
+*.md
+*.sh
+README*
+
+# NOTE: checkpoints/ is intentionally NOT excluded so best_model.pt is included
