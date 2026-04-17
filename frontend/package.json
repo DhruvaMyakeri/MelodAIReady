@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "@tonejs/midi": "^2.0.28",
+    "@vitejs/plugin-react": "^6.0.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tone": "^15.1.22",
+    "wavesurfer.js": "^7.12.6"
+  }
+}
