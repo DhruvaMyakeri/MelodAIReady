@@ -1,10 +1,10 @@
-# 🎧 MelodAI: Audio-to-Symbolic Music Transcription Pipeline
+# MelodAI: Audio-to-Symbolic Music Transcription Pipeline
 
 A cutting-edge, end-to-end machine learning system that transforms complex, multi-instrument audio recordings (MP3/WAV) into mathematically structured, arranged MIDI scores. Now fully dockerized with an asynchronous FastAPI backend and a custom Neo-Brutalist React web interface featuring high-fidelity `Tone.js` SoundFont previews.
 
 ---
 
-## 🚀 Overview
+## Overview
 
 MelodAI goes far beyond basic instrument classification. It extracts, isolates, tracks, and synthetically reconstructs actual musical compositions from polyphonic audio tracking.
 
@@ -13,7 +13,7 @@ Raw Audio → Stem Isolation → Note Event Detection → CNN Instrument Analysi
 
 ---
 
-## 🔥 Pipeline Architecture
+## Pipeline Architecture
 
 1. **Stem Separation (Demucs)**: 
    Surgically separates the input audio into distinct mixing stems (Vocals, Drums, Bass, Other/Melody) to reduce polyphonic collisions before pitch tracking.
@@ -32,7 +32,7 @@ Raw Audio → Stem Isolation → Note Event Detection → CNN Instrument Analysi
 
 ---
 
-## 🖥 The Interface
+## The Interface
 
 MelodAI ships with a beautifully designed, **Neo-Brutalist React Web App**:
 - **Async Execution**: Long-running ML operations are submitted via a robust job queue over an async FastAPI orchestration architecture.
@@ -42,7 +42,7 @@ MelodAI ships with a beautifully designed, **Neo-Brutalist React Web App**:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 **Backend (ML Pipeline):**
 - **Python 3.10**: Core pipeline glue.
@@ -61,7 +61,7 @@ MelodAI ships with a beautifully designed, **Neo-Brutalist React Web App**:
 
 ---
 
-## 🛠️ Quick Start
+## Quick Start
 
 The entire stack is seamlessly orchestrated via a local Docker network.
 
@@ -77,11 +77,11 @@ docker-compose up --build
 - The Neo-Brutalist Web App boots instantly to `http://localhost:3000`
 - The backend API endpoints natively map to `http://localhost:8000`
 
-### 💡 To Use:
+### To Use:
 Navigate to the web interface, upload a song, and select an output instrument! 
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Dhruva M**
