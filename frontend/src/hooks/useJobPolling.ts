@@ -36,7 +36,11 @@ export function useJobPolling(jobId: string | null) {
   }, [stop]);
 
   useEffect(() => {
-    if (!jobId) return;
+    if (!jobId) {
+      setStatus(null);
+      setError(null);
+      return;
+    }
     activeRef.current = true;
     setStatus(null);
     setError(null);

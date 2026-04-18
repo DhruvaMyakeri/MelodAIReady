@@ -10,7 +10,7 @@ export type Phase =
   | 'DONE'
   | 'ERROR';
 
-export type Instrument = 'Piano' | 'Guitar' | 'Violin' | 'Sitar' | 'Flute' | 'Trumpet';
+export type Instrument = 'Piano' | 'Guitar' | 'Violin' | 'Sitar' | 'Flute' | 'Trumpet' | 'Electric Guitar' | 'Acoustic Electric Guitar';
 
 export type OutputMode = 'midi' | 'sheet';
 
@@ -57,4 +57,17 @@ export const INSTRUMENT_COLORS: Record<Instrument, string> = {
   Sitar: '#00FFE0',
   Flute: '#FF2020',
   Trumpet: '#FF6B00',
+  'Electric Guitar': '#AA00FF',
+  'Acoustic Electric Guitar': '#FFA000',
+};
+
+export const INSTRUMENT_SHADOWS: Record<Instrument, string> = {
+  Piano: '#FF2020',
+  Guitar: '#FF2D78',
+  Violin: '#FFE500',
+  Sitar: '#00FFE0',
+  Flute: '#39FF14',
+  Trumpet: '#FFE500',
+  'Electric Guitar': '#FFE500',
+  'Acoustic Electric Guitar': '#00FFE0',
 };
