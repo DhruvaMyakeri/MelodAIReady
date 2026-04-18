@@ -1,5 +1,5 @@
 /* ─── FONTS ─────────────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@700;900&family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@300;400;500;700&family=Caveat:wght@400;700&family=Permanent+Marker&display=swap');
 
 /* ─── CSS VARIABLES ─────────────────────────────────────────────────────────── */
 :root {
@@ -12,9 +12,12 @@
   --white: #FFFFFF;
   --orange: #FF6B00;
 
-  --font-display: 'Anton', sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
   --font-grotesk: 'Space Grotesk', sans-serif;
+  --font-condensed: 'Barlow Condensed', sans-serif;
+  --font-marker: 'Permanent Marker', cursive;
+  --font-caveat: 'Caveat', cursive;
 }
 
 /* ─── RESET ─────────────────────────────────────────────────────────────────── */
@@ -33,16 +36,19 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   color: var(--white);
-  font-family: var(--font-mono);
+  font-family: var(--font-grotesk);
+  font-weight: 300;
   min-height: 100vh;
   overflow-x: hidden;
+  border-radius: 0;
 }
+* { border-radius: 0 !important; }
 
 /* ─── BG OVERLAY ────────────────────────────────────────────────────────────── */
 .bg-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(10, 10, 10, 0.58);
+  background: rgba(10, 10, 10, 0.42);
   pointer-events: none;
   z-index: 0;
 }
@@ -69,22 +75,24 @@ body {
 }
 
 .hero-stamp {
-  display: inline-block;
-  font-family: var(--font-grotesk);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: var(--yellow);
-  border: 1px solid var(--yellow);
-  padding: 3px 8px;
+  border: 1px solid currentColor;
+  padding: 2px 7px;
   margin-bottom: 8px;
 }
 
 .hero-title {
-  font-family: var(--font-display);
+  font-family: var(--font-marker);
+  font-weight: 400;
   font-size: clamp(80px, 14vw, 160px);
   line-height: 0.9;
-  letter-spacing: -0.02em;
+  letter-spacing: 6px;
   color: var(--white);
   text-transform: uppercase;
   display: block;
@@ -93,9 +101,11 @@ body {
 
 .hero-sub {
   font-family: var(--font-mono);
+  font-weight: 400;
   font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.55);
+  letter-spacing: 2px;
+  color: var(--white);
+  opacity: 0.5;
   margin-bottom: 16px;
 }
 
@@ -105,13 +115,13 @@ body {
   flex-wrap: wrap;
 }
 
-/* ─── STAMP BADGE ───────────────────────────────────────────────────────────── */
 .stamp-badge {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 2px;
   border: 1px solid currentColor;
-  padding: 2px 6px;
+  padding: 2px 7px;
   color: var(--yellow);
   display: inline-block;
 }
@@ -157,8 +167,8 @@ body {
 }
 
 .upload-zone {
-  border: 3px dashed var(--yellow);
-  background: rgba(10, 10, 10, 0.45);
+  border: 2px dashed var(--yellow);
+  background: rgba(0, 0, 0, 0.55);
   padding: 60px 32px;
   text-align: center;
   cursor: pointer;
@@ -190,9 +200,10 @@ body {
 
 .upload-zone-main {
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: 3rem;
   color: var(--white);
-  letter-spacing: 0.05em;
+  letter-spacing: 3px;
 }
 
 .upload-zone-sub {
@@ -269,8 +280,11 @@ body {
 
 /* ─── CONTROLS PANEL ─────────────────────────────────────────────────────────── */
 .controls-panel {
-  background: rgba(10, 10, 10, 0.45);
-  border: 2px solid var(--cyan);
+  background: rgba(0, 0, 0, 0.52);
+  border-top: 2px solid var(--cyan);
+  border-left: 2px solid var(--cyan);
+  border-right: 1px solid rgba(0, 255, 224, 0.25);
+  border-bottom: 1px solid rgba(0, 255, 224, 0.25);
   box-shadow: 3px 3px 0px var(--cyan);
   padding: 28px;
   display: flex;
@@ -286,10 +300,23 @@ body {
 
 .control-label {
   font-family: var(--font-grotesk);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--white);
+  opacity: 0.55;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.control-label::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background-color: var(--cyan);
+  margin-right: 8px;
 }
 
 /* ─── INSTRUMENT GRID ────────────────────────────────────────────────────────── */
@@ -300,16 +327,17 @@ body {
 }
 
 .instrument-btn {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  padding: 8px 14px;
-  background: transparent;
-  border: 2px solid var(--accent, var(--yellow));
-  color: var(--accent, var(--yellow));
+  font-family: var(--font-condensed);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 14px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--white);
+  text-transform: uppercase;
   cursor: pointer;
-  transition: box-shadow 0.1s, transform 0.1s, background 0.1s;
+  transition: box-shadow 0.1s, transform 0.1s, background 0.1s, color 0.1s, border-color 0.1s;
 }
 
 .instrument-btn:hover {
@@ -320,7 +348,8 @@ body {
 .instrument-btn.selected {
   background: var(--accent, var(--yellow));
   color: #000;
-  box-shadow: 3px 3px 0px #fff;
+  box-shadow: 3px 3px 0px var(--shadow, #fff);
+  border-color: var(--accent, var(--yellow));
 }
 
 /* ─── TOGGLE ROW ─────────────────────────────────────────────────────────────── */
@@ -331,16 +360,17 @@ body {
 }
 
 .mode-btn {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-family: var(--font-condensed);
   font-weight: 700;
-  letter-spacing: 0.1em;
-  padding: 10px 18px;
-  background: transparent;
-  border: 2px solid var(--cyan);
-  color: var(--cyan);
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 14px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--white);
+  text-transform: uppercase;
   cursor: pointer;
-  transition: box-shadow 0.1s, transform 0.1s, background 0.1s;
+  transition: box-shadow 0.1s, transform 0.1s, background 0.1s, color 0.1s, border-color 0.1s;
 }
 
 .mode-btn:hover {
@@ -352,12 +382,13 @@ body {
   background: var(--cyan);
   color: #000;
   box-shadow: 3px 3px 0px #fff;
+  border-color: var(--cyan);
 }
 
-/* ─── THRESHOLD SLIDER ───────────────────────────────────────────────────────── */
 .threshold-value {
   color: var(--yellow);
   font-family: var(--font-mono);
+  font-weight: 600;
 }
 
 .slider-wrapper {
@@ -448,6 +479,7 @@ body {
 
 .demucs-warning {
   font-family: var(--font-mono);
+  font-weight: 400;
   font-size: 0.7rem;
   color: var(--red);
   letter-spacing: 0.05em;
@@ -457,8 +489,9 @@ body {
 /* ─── SUBMIT BUTTON ──────────────────────────────────────────────────────────── */
 .submit-btn {
   font-family: var(--font-display);
-  font-size: 1.6rem;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 5px;
   width: 100%;
   padding: 18px 24px;
   background: var(--yellow);
@@ -489,7 +522,7 @@ body {
 
 /* ─── PROCESSING VIEW ────────────────────────────────────────────────────────── */
 .processing-view {
-  background: rgba(10, 10, 10, 0.45);
+  background: rgba(0, 0, 0, 0.55);
   border: 3px solid var(--pink);
   box-shadow: 4px 4px 0px var(--pink);
   padding: 32px;
@@ -504,6 +537,7 @@ body {
 /* Phase display */
 .phase-display {
   font-family: var(--font-display);
+  font-weight: 400;
   font-size: clamp(2.5rem, 7vw, 5rem);
   letter-spacing: 0.05em;
   line-height: 1;
@@ -649,7 +683,7 @@ body {
 
 /* ─── LOG TERMINAL ───────────────────────────────────────────────────────────── */
 .log-terminal {
-  background: rgba(10, 10, 10, 0.65);
+  background: rgba(0, 0, 0, 0.75);
   border: 2px solid var(--green);
   position: relative;
   overflow: hidden;
@@ -761,7 +795,7 @@ body {
 
 /* ─── AUDIO PLAYER ───────────────────────────────────────────────────────────── */
 .audio-player {
-  background: rgba(10, 10, 10, 0.45);
+  background: rgba(0, 0, 0, 0.50);
   border: 2px solid var(--yellow);
   box-shadow: 3px 3px 0px var(--yellow);
   padding: 28px;
@@ -934,7 +968,7 @@ body {
 
 /* ─── DOWNLOAD PANEL ─────────────────────────────────────────────────────────── */
 .download-panel {
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(0, 0, 0, 0.52);
   border: 2px solid var(--cyan);
   box-shadow: 3px 3px 0px var(--cyan);
   padding: 28px;
@@ -1113,6 +1147,16 @@ body {
   letter-spacing: 0.15em;
   color: rgba(255,255,255,0.2);
   flex-wrap: wrap;
+}
+
+/* ─── ANNOTATIONS ───────────────────────────────────────────────────────────── */
+.caveat-note {
+  font-family: var(--font-caveat);
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 10;
 }
 
 /* ─── MOBILE ─────────────────────────────────────────────────────────────────── */
