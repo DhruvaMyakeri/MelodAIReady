@@ -266,7 +266,13 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
                 dur *= rit_mult
                 if entry.get("_pre_climax_nudge", False):
                     start -= 0.006
-                offset_ms = random.uniform(-10, 10) if instrument == "Piano" else 0
+                offset_ms = 0
+                if instrument == "Piano":
+                    offset_ms = random.uniform(-10, 10)
+                elif "Guitar" in instrument:
+                    offset_ms = -10 if role == 'bass' else 15
+                elif instrument in ["Sitar", "Violin", "Flute"]:
+                    offset_ms = 25 if role == 'melody' else 10
                 start += offset_ms / 1000.0
 
                 decay = {"melody": 0.6, "bass": 0.4}.get(role, 0.3)

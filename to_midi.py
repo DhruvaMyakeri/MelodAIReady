@@ -11,7 +11,9 @@ NOTE_MAP = {"C": 0, "C#": 1, "Db": 1, "D": 2, "D#": 3, "Eb": 3,
 
 INSTRUMENT_PROGRAMS = {
     "Piano":   0,    # Acoustic Grand Piano
-    "Guitar":  25,   # Acoustic Guitar (steel)
+    "Guitar":  24,   # Acoustic Guitar (nylon)
+    "Acoustic Electric Guitar": 25, # Acoustic Guitar (steel)
+    "Electric Guitar": 27, # Electric Guitar (clean)
     "Flute":   73,   # Flute
     "Violin":  40,   # Violin
     "Trumpet": 56,   # Trumpet
@@ -133,7 +135,7 @@ def main():
         offset_ms = 0
         if args.instrument == "Piano":
             offset_ms = random.uniform(-10, 10)
-        elif args.instrument == "Guitar":
+        elif "Guitar" in args.instrument:
             offset_ms = -10 if role == 'bass' else 15
         elif args.instrument in ["Sitar", "Violin", "Flute"]:
             offset_ms = 25 if role == 'melody' else 10

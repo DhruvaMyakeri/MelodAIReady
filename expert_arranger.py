@@ -63,6 +63,8 @@ def compute_tension(midi_list, key_str):
 INSTRUMENT_RANGES = {
     "Piano":   (21, 108),
     "Guitar":  (40, 84),
+    "Electric Guitar": (40, 84),
+    "Acoustic Electric Guitar": (40, 84),
     "Sitar":   (50, 77),
     "Flute":   (60, 96),
     "Violin":  (55, 103),
@@ -71,22 +73,32 @@ INSTRUMENT_RANGES = {
 
 def frequency_band_gate(notes, instrument):
     """
-    Permanently delete notes falling outside the instrument's physical MIDI range.
+    Octave-shift notes falling outside the instrument's physical MIDI range into range.
     """
     lo, hi = INSTRUMENT_RANGES.get(instrument, (0, 127))
-    kept = []
-    deleted = 0
+    shifted = 0
+    
     for n in notes:
-        if n['midi'] < lo:
-            print(f"  [GATE] Deleted MIDI {n['midi']} ({n['note']}): below {instrument} min ({lo})")
-            deleted += 1
-        elif n['midi'] > hi:
-            print(f"  [GATE] Deleted MIDI {n['midi']} ({n['note']}): above {instrument} max ({hi})")
-            deleted += 1
-        else:
-            kept.append(n)
-    print(f"[GATE] Frequency band gate: removed {deleted} out-of-range notes, kept {len(kept)}.")
-    return kept
+        original_midi = n['midi']
+        
+        # Shift up if too low
+        while n['midi'] < lo and n['midi'] + 12 <= 127:
+            n['midi'] += 12
+            
+        # Shift down if too high
+        while n['midi'] > hi and n['midi'] - 12 >= 0:
+            n['midi'] -= 12
+            
+        # Hard clamp just in case
+        if n['midi'] < lo: n['midi'] = lo
+        elif n['midi'] > hi: n['midi'] = hi
+        
+        if n['midi'] != original_midi:
+            shifted += 1
+            print(f"  [GATE] Octave shifted MIDI {original_midi} -> {n['midi']} to fit {instrument} range")
+            
+    print(f"[GATE] Frequency band gate: shifted {shifted} out-of-range notes to fit {instrument} range.")
+    return notes
 
 # ─── CORE PIPELINE STAGES ───────────────────────────────────────────────
 
@@ -440,7 +452,7 @@ def build_chords_and_reduce(clusters, instrument="Piano", global_key="Ambiguous"
             two_hands = False
             roles['harmony'] = []  # Strip harmony
             roles['bass'] = None   # Strip bass overlay
-        elif instrument == "Guitar":
+        elif "Guitar" in instrument:
             limit_poly = 6
             two_hands = False
         else: # Piano defaults
