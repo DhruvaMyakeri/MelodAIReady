@@ -1,3 +1,20 @@
+## Preview
+
+<div align="center">
+<table>
+  <tr>
+    <td><img width="380" alt="Dashboard overview" src="https://github.com/user-attachments/assets/860ccc5a-ed17-4a54-b958-649f32a4308b" /></td>
+    <td><img width="380" alt="Upload interface" src="https://github.com/user-attachments/assets/0dcbf500-5806-4c6e-b0ca-e02fd7440906" /></td>
+    <td><img width="380" alt="Pipeline progress" src="https://github.com/user-attachments/assets/311d2815-ad4a-4dc0-9015-b0924453d5f0" /></td>
+  </tr>
+  <tr>
+    <td><img width="380" alt="Instrument selector" src="https://github.com/user-attachments/assets/76345695-d7c2-4e62-b41d-6ead67de74de" /></td>
+    <td><img width="380" alt="Mixer view" src="https://github.com/user-attachments/assets/e5edbf75-0400-4f43-b80f-8e114cda5ff6" /></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+
 # MelodAI: Audio-to-Symbolic Music Transcription Pipeline
 
 A cutting-edge, end-to-end machine learning system that transforms complex, multi-instrument audio recordings (MP3/WAV) into mathematically structured, arranged MIDI scores. Now fully dockerized with an asynchronous FastAPI backend and a custom Neo-Brutalist React web interface featuring high-fidelity `Tone.js` SoundFont previews.
