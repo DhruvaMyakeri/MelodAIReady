@@ -69,6 +69,8 @@ export default function AudioPlayer({ jobId, instrument, outputMode }: Props) {
         const SF_NAMES: Record<Instrument, string> = {
           Piano: 'acoustic_grand_piano',
           Guitar: 'acoustic_guitar_nylon',
+          'Electric Guitar': 'electric_guitar_clean',
+          'Acoustic Electric Guitar': 'acoustic_guitar_steel',
           Violin: 'violin',
           Sitar: 'sitar',
           Flute: 'flute',
@@ -168,9 +170,14 @@ export default function AudioPlayer({ jobId, instrument, outputMode }: Props) {
       <div className="player-title">AUDIO PLAYBACK</div>
 
       {/* Play / Pause */}
-      <button className="play-btn" onClick={handleTogglePlay} aria-label="Toggle playback">
-        {sync.isPlaying ? 'PAUSE' : 'PLAY'}
-      </button>
+      <div style={{ position: 'relative' }}>
+        <div className="caveat-note" style={{ top: '-15px', right: '10px', fontWeight: 400, fontSize: '18px', color: '#FF2D78', opacity: 0.5, transform: 'rotate(-2deg)' }}>
+          play it loud.
+        </div>
+        <button className="play-btn" onClick={handleTogglePlay} aria-label="Toggle playback">
+          {sync.isPlaying ? 'PAUSE' : 'PLAY'}
+        </button>
+      </div>
 
       {/* Track rows */}
       <div className="track-rows">
@@ -262,7 +269,12 @@ function TrackRow({ label, color, progress, currentTime, duration, volOn, onTogg
         ))}
       </div>
       <span className="track-time">{formatTime(currentTime)} / {formatTime(duration)}</span>
-      <div className="vol-controls">
+      <div className="vol-controls" style={{ position: 'relative' }}>
+        {label === 'MELODAI' && (
+          <div className="caveat-note" style={{ top: '-15px', right: '0', fontWeight: 400, fontSize: '14px', color: '#FFE500', opacity: 0.45, transform: 'rotate(1deg)' }}>
+            or don't. your call.
+          </div>
+        )}
         <button
           className={`vol-btn${volOn ? '' : ' muted'}`}
           onClick={onToggleVol}

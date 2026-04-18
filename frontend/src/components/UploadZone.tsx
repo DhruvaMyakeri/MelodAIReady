@@ -64,6 +64,10 @@ export default function UploadZone({ file, onChange }: Props) {
           <div className="upload-zone-main">DROP AUDIO HERE</div>
           <div className="upload-zone-sub">MP3 / WAV / FLAC</div>
           <div className="upload-zone-hint">or click to browse</div>
+          
+          <div className="caveat-note" style={{ bottom: '10px', left: '20px', fontWeight: 700, fontSize: '22px', color: '#FFE500', opacity: 0.6, transform: 'rotate(-3deg)' }}>
+            just drop it.
+          </div>
         </div>
       ) : (
         <div className="file-ticket">

@@ -76,6 +76,9 @@ export default function App() {
           <div className="hero-sub">
             AUDIO INTELLIGENCE. NO CLOUD. NO COMPROMISE.
           </div>
+          <div className="hero-sub" style={{ marginTop: '-8px' }}>
+            — EST. 2025 · OFFLINE · CPU-NATIVE —
+          </div>
           <div className="hero-tags">
             <span className="stamp-badge">[CNN]</span>
             <span className="stamp-badge">[MIDI]</span>

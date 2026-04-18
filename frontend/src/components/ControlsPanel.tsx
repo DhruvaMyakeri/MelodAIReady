@@ -1,5 +1,5 @@
 import type { UploadConfig, Instrument, OutputMode } from '../types';
-import { INSTRUMENT_COLORS } from '../types';
+import { INSTRUMENT_COLORS, INSTRUMENT_SHADOWS } from '../types';
 
 interface Props {
   config: UploadConfig;
@@ -9,7 +9,7 @@ interface Props {
   isSubmitting: boolean;
 }
 
-const INSTRUMENTS: Instrument[] = ['Piano', 'Guitar', 'Violin', 'Sitar', 'Flute', 'Trumpet'];
+const INSTRUMENTS: Instrument[] = ['Piano', 'Guitar', 'Electric Guitar', 'Acoustic Electric Guitar', 'Violin', 'Sitar', 'Flute', 'Trumpet'];
 
 export default function ControlsPanel({ config, onChange, hasFile, onSubmit, isSubmitting }: Props) {
   const set = (partial: Partial<UploadConfig>) => onChange({ ...config, ...partial });
@@ -22,18 +22,25 @@ export default function ControlsPanel({ config, onChange, hasFile, onSubmit, isS
         <div className="instrument-grid">
           {INSTRUMENTS.map(inst => {
             const color = INSTRUMENT_COLORS[inst];
+            const shadow = INSTRUMENT_SHADOWS[inst];
             const selected = config.instrument === inst;
+            const disabled = ['Violin', 'Sitar', 'Flute', 'Trumpet'].includes(inst);
             return (
               <button
                 key={inst}
                 className={`instrument-btn${selected ? ' selected' : ''}`}
                 style={{
                   '--accent': color,
+                  '--shadow': shadow,
+                  opacity: disabled ? 0.3 : 1,
+                  cursor: disabled ? 'not-allowed' : 'pointer',
+                  pointerEvents: disabled ? 'none' : 'auto'
                 } as React.CSSProperties}
-                onClick={() => set({ instrument: inst })}
+                onClick={() => !disabled && set({ instrument: inst })}
                 aria-pressed={selected}
+                disabled={disabled}
               >
-                {inst.toUpperCase()}
+                {inst} {disabled && '(COMING SOON)'}
               </button>
             );
           })}
@@ -44,23 +51,35 @@ export default function ControlsPanel({ config, onChange, hasFile, onSubmit, isS
       <div className="control-group">
         <div className="control-label">OUTPUT FORMAT</div>
         <div className="toggle-row">
-          {(['midi', 'sheet'] as OutputMode[]).map(mode => (
-            <button
-              key={mode}
-              className={`mode-btn${config.output_mode === mode ? ' selected' : ''}`}
-              onClick={() => set({ output_mode: mode })}
-              aria-pressed={config.output_mode === mode}
-            >
-              {mode === 'midi' ? '[ MIDI ]' : '[ SHEET MUSIC ]'}
-            </button>
-          ))}
+          {(['midi', 'sheet'] as OutputMode[]).map(mode => {
+            const disabled = mode === 'sheet';
+            return (
+              <button
+                key={mode}
+                className={`mode-btn${config.output_mode === mode ? ' selected' : ''}`}
+                onClick={() => !disabled && set({ output_mode: mode })}
+                aria-pressed={config.output_mode === mode}
+                disabled={disabled}
+                style={{
+                  opacity: disabled ? 0.3 : 1,
+                  cursor: disabled ? 'not-allowed' : 'pointer',
+                  pointerEvents: disabled ? 'none' : 'auto'
+                } as React.CSSProperties}
+              >
+                {mode === 'midi' ? '[ MIDI ]' : '[ SHEET MUSIC (COMING SOON) ]'}
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {/* THRESHOLD SLIDER */}
-      <div className="control-group">
+      <div className="control-group" style={{ position: 'relative' }}>
         <div className="control-label">
           THRESHOLD: <span className="threshold-value">{config.threshold.toFixed(2)}</span>
+        </div>
+        <div className="caveat-note" style={{ top: '-10px', right: '10px', fontWeight: 400, fontSize: '16px', color: '#FF2D78', opacity: 0.55, transform: 'rotate(-2deg)' }}>
+          higher = stricter
         </div>
         <div className="slider-wrapper">
           <input
@@ -82,7 +101,10 @@ export default function ControlsPanel({ config, onChange, hasFile, onSubmit, isS
       </div>
 
       {/* SKIP DEMUCS */}
-      <div className="control-group">
+      <div className="control-group" style={{ position: 'relative' }}>
+        <div className="caveat-note" style={{ top: '6px', right: '40px', fontWeight: 400, fontSize: '15px', color: '#39FF14', opacity: 0.5, transform: 'rotate(1deg)' }}>
+          trust me, skip it.
+        </div>
         <label className="checkbox-row" htmlFor="skip-demucs">
           <div
             id="skip-demucs"
@@ -103,14 +125,19 @@ export default function ControlsPanel({ config, onChange, hasFile, onSubmit, isS
       </div>
 
       {/* SUBMIT */}
-      <button
-        className={`submit-btn${!hasFile || isSubmitting ? ' disabled' : ''}`}
-        onClick={onSubmit}
-        disabled={!hasFile || isSubmitting}
-        aria-label="Run MelodAI pipeline"
-      >
-        {isSubmitting ? 'LAUNCHING...' : 'RUN MELODAI →'}
-      </button>
+      <div style={{ position: 'relative' }}>
+        <button
+          className={`submit-btn${!hasFile || isSubmitting ? ' disabled' : ''}`}
+          onClick={onSubmit}
+          disabled={!hasFile || isSubmitting}
+          aria-label="Run MelodAI pipeline"
+        >
+          {isSubmitting ? 'LAUNCHING...' : 'RUN MELODAI →'}
+        </button>
+        <div className="caveat-note" style={{ bottom: '-22px', right: '5px', fontWeight: 400, fontSize: '18px', color: '#00FFE0', opacity: 0.5, transform: 'rotate(1.5deg)' }}>
+          this might take a sec—
+        </div>
+      </div>
     </div>
   );
 }

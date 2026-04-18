@@ -46,15 +46,23 @@ export default function ProcessingView({ status, onAbort }: Props) {
       <div className="ghost-label" aria-hidden="true">PROCESS</div>
 
       {/* Phase name — concert poster style */}
-      <div className={`phase-display phase-anim-${phaseAnim}`} style={{ color: phaseColor }}>
-        {displayPhase ?? phase}
-      </div>
-      <div className="phase-sub" style={{ color: phaseColor }}>
-        {isError ? 'PIPELINE FAILED' : 'PIPELINE ACTIVE'}
+      <div style={{ position: 'relative' }}>
+        <div className={`phase-display phase-anim-${phaseAnim}`} style={{ color: phaseColor }}>
+          {displayPhase ?? phase}
+        </div>
+        <div className="caveat-note" style={{ bottom: '-10px', left: '10px', fontWeight: 700, fontSize: '24px', color: '#FFE500', opacity: 0.55, transform: 'rotate(-1.5deg)' }}>
+          doing the hard part...
+        </div>
+        <div className="phase-sub" style={{ color: phaseColor }}>
+          {isError ? 'PIPELINE FAILED' : 'PIPELINE ACTIVE'}
+        </div>
       </div>
 
       {/* Progress blocks */}
-      <div className="progress-area">
+      <div className="progress-area" style={{ position: 'relative' }}>
+        <div className="caveat-note" style={{ top: '-25px', left: '20px', fontWeight: 400, fontSize: '16px', color: '#00FFE0', opacity: 0.45, transform: 'rotate(2deg)' }}>
+          almost, probably.
+        </div>
         <div className="progress-blocks">
           {Array.from({ length: TOTAL_BLOCKS }).map((_, i) => (
             <div
@@ -107,7 +115,12 @@ export default function ProcessingView({ status, onAbort }: Props) {
       )}
 
       {/* Log terminal */}
-      <LogTerminal status={status} />
+      <div style={{ position: 'relative' }}>
+        <LogTerminal status={status} />
+        <div className="caveat-note" style={{ top: '-18px', right: '10px', fontWeight: 400, fontSize: '15px', color: '#FF2D78', opacity: 0.4, transform: 'rotate(-1deg)' }}>
+          machine go brrr
+        </div>
+      </div>
 
       {/* Abort */}
       <div className="processing-footer">

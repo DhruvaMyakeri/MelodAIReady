@@ -34,14 +34,19 @@ export default function DownloadPanel({ jobId, status, outputMode, instrument, o
       <div className="ghost-label" aria-hidden="true" style={{ fontSize: '5rem', opacity: 0.03 }}>OUTPUT</div>
 
       {/* Download button */}
-      <a
-        href={downloadUrl}
-        download
-        className="download-btn"
-        aria-label={`Download ${ext} file`}
-      >
-        ↓ DOWNLOAD
-      </a>
+      <div style={{ position: 'relative' }}>
+        <a
+          href={downloadUrl}
+          download
+          className="download-btn"
+          aria-label={`Download ${ext} file`}
+        >
+          ↓ DOWNLOAD
+        </a>
+        <div className="caveat-note" style={{ top: '-12px', right: '-15px', fontWeight: 700, fontSize: '22px', color: '#39FF14', opacity: 0.55, transform: 'rotate(1.5deg)' }}>
+          it's ready. finally.
+        </div>
+      </div>
 
       {/* File type stamp */}
       <div className="file-type-stamp">
