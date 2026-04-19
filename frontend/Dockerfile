@@ -2,7 +2,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-RUN echo "force-rebuild-assets-7"
+RUN echo "force-rebuild-assets-10"
 COPY . .
 RUN npm run build
 

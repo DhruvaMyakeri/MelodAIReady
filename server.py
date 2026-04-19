@@ -234,20 +234,24 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
             append_log(job_id, "[MIDI] Generating MIDI file...")
 
             midi_out_path = os.path.join(work_dir, "output.mid")
-            # Import and run to_midi logic
+
+            # ── Delegate entirely to to_midi v2 expression engine ──
             import json as _json
-            import random
-            from to_midi import apply_todd_phrasing, note_name_to_midi, INSTRUMENT_PROGRAMS
+            from to_midi import (
+                apply_todd_phrasing, note_name_to_midi, INSTRUMENT_PROGRAMS,
+                _articulation_duration, _timing_jitter, _compute_velocity, _decay_tail
+            )
 
             with open(arranged_json_path, "r") as f:
                 notes = _json.load(f)
 
             notes.sort(key=lambda x: x["time"])
-            tempo_val = 120.0
-            notes = apply_todd_phrasing(notes, tempo_val)
+            tempo_val    = 120.0
+            sec_per_beat = 60.0 / tempo_val
+            notes        = apply_todd_phrasing(notes, tempo_val)
 
-            midi = pretty_midi.PrettyMIDI(initial_tempo=tempo_val)
-            program = INSTRUMENT_PROGRAMS.get(instrument, 0)
+            midi       = pretty_midi.PrettyMIDI(initial_tempo=tempo_val)
+            program    = INSTRUMENT_PROGRAMS.get(instrument, 0)
             instr_track = pretty_midi.Instrument(program=program, name=instrument)
 
             skipped = 0
@@ -256,59 +260,45 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
                 if midi_num is None:
                     midi_num = note_name_to_midi(entry.get("note"))
                 if midi_num is None:
-                    skipped += 1; continue
+                    skipped += 1
+                    continue
                 midi_num = int(midi_num)
-                start    = float(entry["time"])
-                dur      = float(entry["duration"])
-                role     = entry.get("role", "harmony")
 
-                rit_mult = entry.get("_rit_mult", 1.0)
-                dur *= rit_mult
+                role     = entry.get("role", "harmony")
+                start    = float(entry["time"])
+                duration = float(entry["duration"])
+
+                # Todd cubic ritardando
+                duration *= entry.get("_rit_mult", 1.0)
+
+                # Articulation (role × instrument)
+                duration = _articulation_duration(role, duration, instrument)
+
+                # Pre-climax timing nudge
                 if entry.get("_pre_climax_nudge", False):
                     start -= 0.006
-                offset_ms = 0
-                if instrument == "Piano":
-                    offset_ms = random.uniform(-10, 10)
-                elif "Guitar" in instrument:
-                    offset_ms = -10 if role == 'bass' else 15
-                elif instrument in ["Sitar", "Violin", "Flute"]:
-                    offset_ms = 25 if role == 'melody' else 10
-                start += offset_ms / 1000.0
 
-                decay = {"melody": 0.6, "bass": 0.4}.get(role, 0.3)
-                if entry.get("_phrase_end_decay", False):
-                    decay += 0.3
-                end = start + dur + decay
+                # Humanisation jitter
+                start += _timing_jitter(role, instrument)
+                start  = max(0.0, start)
 
-                raw_vel = float(entry.get("velocity", 80))
-                if raw_vel <= 1.0: raw_vel *= 127
-                norm_v = min(1.0, raw_vel / 127.0)
-                if role == "melody":   base_vel = int(90 + norm_v * 20)
-                elif role == "bass":   base_vel = int(60 + norm_v * 20)
-                else:                  base_vel = int(50 + norm_v * 20)
-                vel = base_vel + random.randint(-10, 10)
-
-                sec_per_beat = 60.0 / tempo_val
-                beat_idx = round(start / sec_per_beat)
-                is_on_grid = abs(start - beat_idx * sec_per_beat) < 0.05
-                if is_on_grid:
-                    if beat_idx % 4 == 0:   vel += 8
-                    elif beat_idx % 4 == 2: vel += 3 if tempo_val > 120 else 8
-                else:
-                    vel -= 5
-                if entry.get("phrase_start", False):
-                    vel += 5
-                vel = max(1, min(127, vel))
-
+                # Acoustic decay tail
+                tail = _decay_tail(role, instrument,
+                                   phrase_end=entry.get("_phrase_end_decay", False))
+                end  = start + duration + tail
                 if end <= start:
-                    end = start + 0.1
+                    end = start + 0.05
 
-                note_obj = pretty_midi.Note(velocity=vel, pitch=midi_num, start=max(0, start), end=end)
+                # Full velocity pipeline
+                vel = _compute_velocity(entry, role, tempo_val, sec_per_beat, instrument)
+
+                note_obj = pretty_midi.Note(velocity=vel, pitch=midi_num,
+                                            start=start, end=end)
                 instr_track.notes.append(note_obj)
 
             midi.instruments.append(instr_track)
             midi.write(midi_out_path)
-            append_log(job_id, f"[MIDI] Written {len(instr_track.notes)} notes to {midi_out_path}")
+            append_log(job_id, f"[MIDI] Written {len(instr_track.notes)} notes ({skipped} skipped) → {midi_out_path}")
 
             update_job(job_id, phase="OUTPUT", progress=95,
                        output_path=midi_out_path)

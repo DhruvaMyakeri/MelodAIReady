@@ -1,4 +1,12 @@
-import { useRef, useCallback, useState } from 'react';
+/**
+ * useAudioSync.ts
+ *
+ * Manages the HTML <audio> element as the SINGLE master clock.
+ * Exposes an `onSeek` callback so AudioPlayer can reset its
+ * lookahead scheduler whenever the user scrubs the timeline.
+ */
+
+import { useRef, useCallback, useState, useEffect, useMemo } from 'react';
 
 export interface AudioSyncControls {
   isPlaying: boolean;
@@ -15,44 +23,70 @@ export interface AudioSyncControls {
   setOriginalVolumeLevel: (val: number) => void;
   setMidiVolumeLevel: (val: number) => void;
   setOriginalRef: (el: HTMLAudioElement | null) => void;
+  registerSeekCallback: (cb: (time: number) => void) => void;
 }
 
 export function useAudioSync(): AudioSyncControls {
-  const originalRef = useRef<HTMLAudioElement | null>(null);
-  const midiGainRef = useRef<GainNode | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const [originalVolume, setOriginalVolume] = useState(true); // mute toggle
-  const [midiVolume, setMidiVolume] = useState(true);         // mute toggle
-  const [originalLevel, setOriginalLevel] = useState(0.8);
-  const [midiLevel, setMidiLevel] = useState(0.8);
-  const driftCheckRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const toneStartTimeRef = useRef(0);
-  const toneOffsetRef = useRef(0);
+  const originalRef    = useRef<HTMLAudioElement | null>(null);
+  const seekCallbacks  = useRef<Array<(t: number) => void>>([]);
 
-  const setOriginalRef = useCallback((el: HTMLAudioElement | null) => {
-    originalRef.current = el;
-    if (el) {
-      el.ontimeupdate = () => setCurrentTime(el.currentTime);
-      el.onloadedmetadata = () => setDuration(el.duration);
+  const [isPlaying,      setIsPlaying]      = useState(false);
+  const [currentTime,    setCurrentTime]    = useState(0);
+  const [duration,       setDuration]       = useState(0);
+  const [originalVolume, setOriginalVolume] = useState(true);
+  const [midiVolume,     setMidiVolume]     = useState(true);
+  const [originalLevel,  setOriginalLevel]  = useState(0.8);
+  const [midiLevel,      setMidiLevel]      = useState(0.8);
+
+  // ── MASTER VOLUME SYNC (Declarative) ─────────────────────────────────────
+  // This ensures the <audio> element volume ALWAYS matches state,
+  // preventing stale closure issues in callbacks.
+  useEffect(() => {
+    if (originalRef.current) {
+      originalRef.current.volume = originalVolume ? originalLevel : 0;
     }
-  }, []);
+  }, [originalVolume, originalLevel]);
 
+  // ── MASTER REF SETUP ──────────────────────────────────────────────────────
+  const setOriginalRef = useCallback((el: HTMLAudioElement | null) => {
+    if (originalRef.current === el) return;
+    
+    // Cleanup old ref if it's changing
+    if (originalRef.current) {
+      originalRef.current.removeEventListener('timeupdate', () => {});
+      originalRef.current.removeEventListener('loadedmetadata', () => {});
+    }
 
+    originalRef.current = el;
+    if (!el) return;
+
+    // Use event listeners instead of properties for multi-ref stability
+    const onTime = () => setCurrentTime(el.currentTime);
+    const onMeta = () => setDuration(el.duration);
+    
+    el.addEventListener('timeupdate', onTime);
+    el.addEventListener('loadedmetadata', onMeta);
+    
+    // Initial sync
+    el.volume = originalVolume ? originalLevel : 0;
+    setCurrentTime(el.currentTime);
+    if (el.duration) setDuration(el.duration);
+    
+    return () => {
+      el.removeEventListener('timeupdate', onTime);
+      el.removeEventListener('loadedmetadata', onMeta);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Stable ref setter
 
   const togglePlay = useCallback(() => {
     const audio = originalRef.current;
     if (!audio) return;
-
     if (isPlaying) {
       audio.pause();
-      if (driftCheckRef.current) clearInterval(driftCheckRef.current);
       setIsPlaying(false);
     } else {
       audio.play().catch(console.error);
-      toneStartTimeRef.current = Date.now() / 1000;
-      toneOffsetRef.current = audio.currentTime;
       setIsPlaying(true);
     }
   }, [isPlaying]);
@@ -62,18 +96,19 @@ export function useAudioSync(): AudioSyncControls {
     if (audio) {
       audio.currentTime = time;
       setCurrentTime(time);
-      toneOffsetRef.current = time;
-      toneStartTimeRef.current = Date.now() / 1000;
+    }
+    for (const cb of seekCallbacks.current) {
+      cb(time);
     }
   }, []);
 
+  const registerSeekCallback = useCallback((cb: (t: number) => void) => {
+    seekCallbacks.current.push(cb);
+  }, []);
+
   const toggleOriginalVolume = useCallback(() => {
-    setOriginalVolume(v => {
-      const next = !v;
-      if (originalRef.current) originalRef.current.volume = next ? originalLevel : 0;
-      return next;
-    });
-  }, [originalLevel]);
+    setOriginalVolume(v => !v);
+  }, []);
 
   const toggleMidiVolume = useCallback(() => {
     setMidiVolume(v => !v);
@@ -81,16 +116,16 @@ export function useAudioSync(): AudioSyncControls {
 
   const setOriginalVolumeLevel = useCallback((val: number) => {
     setOriginalLevel(val);
-    if (originalRef.current && originalVolume) {
-      originalRef.current.volume = val;
-    }
-  }, [originalVolume]);
+  }, []);
 
   const setMidiVolumeLevel = useCallback((val: number) => {
     setMidiLevel(val);
   }, []);
 
-  return {
+  // ── STABLE RETURN OBJECT ──────────────────────────────────────────────────
+  // useMemo prevents AudioPlayer from re-running effects on every render
+  // unless a primitive state property actually changed.
+  return useMemo(() => ({
     isPlaying,
     currentTime,
     duration,
@@ -105,5 +140,11 @@ export function useAudioSync(): AudioSyncControls {
     setOriginalVolumeLevel,
     setMidiVolumeLevel,
     setOriginalRef,
-  };
+    registerSeekCallback,
+  }), [
+    isPlaying, currentTime, duration, originalVolume, midiVolume, 
+    originalLevel, midiLevel, togglePlay, seek, toggleOriginalVolume, 
+    toggleMidiVolume, setOriginalVolumeLevel, setMidiVolumeLevel, 
+    setOriginalRef, registerSeekCallback
+  ]);
 }

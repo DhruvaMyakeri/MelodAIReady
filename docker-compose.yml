@@ -5,12 +5,21 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      # Bump this arg to force a full image rebuild without --no-cache
+      args:
+        MELODAI_VERSION: "5.0"
     ports:
       - "8000:8000"
     restart: unless-stopped
     volumes:
       - uploads_data:/app/uploads
       - outputs_data:/app/outputs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
 
   frontend:
     build:
@@ -19,7 +28,8 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     restart: unless-stopped
 
 volumes:
