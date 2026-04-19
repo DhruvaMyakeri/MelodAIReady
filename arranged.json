@@ -1,0 +1,6802 @@
+{
+  "notes": [
+    {
+      "pitch": 44,
+      "start": 18.019,
+      "end": 18.321,
+      "velocity": 127,
+      "phrase_id": 0,
+      "phrase_position": 0.0,
+      "tension": 2.0
+    },
+    {
+      "pitch": 46,
+      "start": 18.321,
+      "end": 18.413,
+      "velocity": 127,
+      "phrase_id": 0,
+      "phrase_position": 0.5,
+      "tension": 3.5
+    },
+    {
+      "pitch": 48,
+      "start": 18.437,
+      "end": 18.669,
+      "velocity": 127,
+      "phrase_id": 0,
+      "phrase_position": 1.0,
+      "tension": 4.0,
+      "melody_score": 0.7154545454545455
+    },
+    {
+      "pitch": 46,
+      "start": 19.156,
+      "end": 19.319,
+      "velocity": 127,
+      "phrase_id": 1,
+      "phrase_position": 0.0,
+      "tension": 4.0,
+      "melody_score": 0.58
+    },
+    {
+      "pitch": 48,
+      "start": 19.319,
+      "end": 19.505,
+      "velocity": 127,
+      "phrase_id": 1,
+      "phrase_position": 1.0,
+      "tension": 3.5,
+      "melody_score": 0.6354545454545455
+    },
+    {
+      "pitch": 44,
+      "start": 22.523,
+      "end": 22.825,
+      "velocity": 127,
+      "phrase_id": 2,
+      "phrase_position": 0.0,
+      "tension": 3.0,
+      "melody_score": 0.2681818181818182
+    },
+    {
+      "pitch": 46,
+      "start": 22.825,
+      "end": 22.918,
+      "velocity": 127,
+      "phrase_id": 2,
+      "phrase_position": 0.3333333333333333,
+      "tension": 3.5,
+      "melody_score": 0.6354545454545455
+    },
+    {
+      "pitch": 48,
+      "start": 22.918,
+      "end": 23.081,
+      "velocity": 127,
+      "phrase_id": 2,
+      "phrase_position": 0.6666666666666666,
+      "tension": 3.75,
+      "melody_score": 0.7204545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 23.081,
+      "end": 23.174,
+      "velocity": 127,
+      "phrase_id": 2,
+      "phrase_position": 1.0,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 47,
+      "start": 23.638,
+      "end": 23.963,
+      "velocity": 127,
+      "phrase_id": 3,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 27.005,
+      "end": 27.237,
+      "velocity": 127,
+      "phrase_id": 4,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 27.771,
+      "end": 27.864,
+      "velocity": 127,
+      "phrase_id": 5,
+      "phrase_position": 0.0,
+      "tension": 1.75,
+      "melody_score": 0.7604545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 27.864,
+      "end": 28.119,
+      "velocity": 127,
+      "phrase_id": 5,
+      "phrase_position": 1.0,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 37,
+      "start": 29.257,
+      "end": 29.513,
+      "velocity": 127,
+      "phrase_id": 6,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.6831818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 29.559,
+      "end": 29.675,
+      "velocity": 127,
+      "phrase_id": 6,
+      "phrase_position": 1.0,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 30.14,
+      "end": 30.348,
+      "velocity": 127,
+      "phrase_id": 7,
+      "phrase_position": 0.0,
+      "tension": 2.5,
+      "melody_score": 0.3009090909090909
+    },
+    {
+      "pitch": 38,
+      "start": 31.208,
+      "end": 31.44,
+      "velocity": 127,
+      "phrase_id": 8,
+      "phrase_position": 0.0,
+      "tension": 3.75,
+      "melody_score": 0.835
+    },
+    {
+      "pitch": 38,
+      "start": 31.533,
+      "end": 31.788,
+      "velocity": 127,
+      "phrase_id": 8,
+      "phrase_position": 1.0,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 32.206,
+      "end": 32.322,
+      "velocity": 127,
+      "phrase_id": 9,
+      "phrase_position": 0.0,
+      "tension": 1.75,
+      "melody_score": 0.6704545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 32.322,
+      "end": 32.624,
+      "velocity": 127,
+      "phrase_id": 9,
+      "phrase_position": 1.0,
+      "tension": 2.5,
+      "melody_score": 0.3009090909090909
+    },
+    {
+      "pitch": 38,
+      "start": 33.739,
+      "end": 33.994,
+      "velocity": 127,
+      "phrase_id": 10,
+      "phrase_position": 0.0,
+      "tension": 3.75,
+      "melody_score": 0.835
+    },
+    {
+      "pitch": 38,
+      "start": 34.598,
+      "end": 34.783,
+      "velocity": 127,
+      "phrase_id": 11,
+      "phrase_position": 0.0,
+      "tension": 3.75,
+      "melody_score": 0.6531818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 35.689,
+      "end": 35.944,
+      "velocity": 127,
+      "phrase_id": 12,
+      "phrase_position": 0.0,
+      "tension": 3.5,
+      "melody_score": 0.7718181818181818
+    },
+    {
+      "pitch": 36,
+      "start": 35.968,
+      "end": 36.223,
+      "velocity": 127,
+      "phrase_id": 12,
+      "phrase_position": 1.0,
+      "tension": 3.25,
+      "melody_score": 0.8668181818181818
+    },
+    {
+      "pitch": 56,
+      "start": 36.757,
+      "end": 36.873,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 59,
+      "start": 36.873,
+      "end": 37.013,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.034482758620689655,
+      "tension": 1.5,
+      "melody_score": 0.31363636363636366
+    },
+    {
+      "pitch": 56,
+      "start": 37.152,
+      "end": 37.547,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.06896551724137931,
+      "tension": 1.75,
+      "melody_score": 0.3159090909090909
+    },
+    {
+      "pitch": 56,
+      "start": 37.756,
+      "end": 37.849,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.10344827586206896,
+      "tension": 2.25,
+      "melody_score": 0.6831818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 37.941,
+      "end": 38.058,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.13793103448275862,
+      "tension": 2.0,
+      "melody_score": 0.62
+    },
+    {
+      "pitch": 52,
+      "start": 38.058,
+      "end": 38.197,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.1724137931034483,
+      "tension": 1.5,
+      "melody_score": 0.7200000000000001
+    },
+    {
+      "pitch": 45,
+      "start": 38.22,
+      "end": 38.499,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.20689655172413793,
+      "tension": 2.25,
+      "melody_score": 0.23772727272727276
+    },
+    {
+      "pitch": 54,
+      "start": 38.499,
+      "end": 39.451,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.2413793103448276,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 39.52,
+      "end": 39.706,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.27586206896551724,
+      "tension": 2.75,
+      "melody_score": 0.7631818181818182
+    },
+    {
+      "pitch": 56,
+      "start": 39.706,
+      "end": 39.799,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.3103448275862069,
+      "tension": 2.25,
+      "melody_score": 0.6604545454545455
+    },
+    {
+      "pitch": 56,
+      "start": 40.008,
+      "end": 40.287,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.3448275862068966,
+      "tension": 2.25,
+      "melody_score": 0.6831818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 40.287,
+      "end": 40.426,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.3793103448275862,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 39,
+      "start": 40.449,
+      "end": 41.123,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.41379310344827586,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 41,
+      "start": 41.123,
+      "end": 41.308,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.4482758620689655,
+      "tension": 2.75,
+      "melody_score": 0.7404545454545455
+    },
+    {
+      "pitch": 40,
+      "start": 41.401,
+      "end": 41.517,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.4827586206896552,
+      "tension": 1.5,
+      "melody_score": 0.8118181818181819
+    },
+    {
+      "pitch": 68,
+      "start": 41.726,
+      "end": 41.819,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.5172413793103449,
+      "tension": 1.5,
+      "melody_score": 0.2413636363636364
+    },
+    {
+      "pitch": 56,
+      "start": 41.819,
+      "end": 41.912,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.5517241379310345,
+      "tension": 2.0,
+      "melody_score": 0.3213636363636364
+    },
+    {
+      "pitch": 56,
+      "start": 41.958,
+      "end": 42.051,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.5862068965517241,
+      "tension": 2.5,
+      "melody_score": 0.7681818181818182
+    },
+    {
+      "pitch": 58,
+      "start": 42.051,
+      "end": 42.144,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.6206896551724138,
+      "tension": 3.0,
+      "melody_score": 0.6454545454545455
+    },
+    {
+      "pitch": 56,
+      "start": 42.26,
+      "end": 42.446,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.6551724137931034,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 54,
+      "start": 42.446,
+      "end": 42.585,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.6896551724137931,
+      "tension": 2.0,
+      "melody_score": 0.7100000000000001
+    },
+    {
+      "pitch": 52,
+      "start": 42.585,
+      "end": 42.748,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.7241379310344828,
+      "tension": 1.5,
+      "melody_score": 0.7200000000000001
+    },
+    {
+      "pitch": 45,
+      "start": 42.748,
+      "end": 42.841,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.7586206896551724,
+      "tension": 2.25,
+      "melody_score": 0.23772727272727276
+    },
+    {
+      "pitch": 45,
+      "start": 42.91,
+      "end": 43.003,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.7931034482758621,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 43.05,
+      "end": 43.816,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.8275862068965517,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 53,
+      "start": 43.862,
+      "end": 44.211,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.8620689655172413,
+      "tension": 3.75,
+      "melody_score": 0.8568181818181818
+    },
+    {
+      "pitch": 55,
+      "start": 44.211,
+      "end": 44.35,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.896551724137931,
+      "tension": 3.5,
+      "melody_score": 0.6354545454545455
+    },
+    {
+      "pitch": 56,
+      "start": 44.466,
+      "end": 44.791,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.9310344827586207,
+      "tension": 2.75,
+      "melody_score": 0.9450000000000001
+    },
+    {
+      "pitch": 54,
+      "start": 44.791,
+      "end": 44.907,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 0.9655172413793104,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 39,
+      "start": 44.931,
+      "end": 45.674,
+      "velocity": 127,
+      "phrase_id": 13,
+      "phrase_position": 1.0,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 56,
+      "start": 46.138,
+      "end": 46.533,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 56,
+      "start": 46.765,
+      "end": 46.858,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.004,
+      "tension": 2.5,
+      "melody_score": 0.7681818181818182
+    },
+    {
+      "pitch": 43,
+      "start": 46.904,
+      "end": 46.997,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.008,
+      "tension": 2.5,
+      "melody_score": 0.22136363636363637
+    },
+    {
+      "pitch": 52,
+      "start": 47.044,
+      "end": 47.183,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.012,
+      "tension": 1.75,
+      "melody_score": 0.32636363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 47.183,
+      "end": 47.276,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.016,
+      "tension": 2.25,
+      "melody_score": 0.32772727272727276
+    },
+    {
+      "pitch": 37,
+      "start": 47.276,
+      "end": 47.392,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.02,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 45,
+      "start": 47.392,
+      "end": 47.485,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.024,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 47.485,
+      "end": 47.787,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.028,
+      "tension": 3.5,
+      "melody_score": 0.17136363636363638
+    },
+    {
+      "pitch": 54,
+      "start": 47.856,
+      "end": 48.042,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.032,
+      "tension": 3.25,
+      "melody_score": 0.665
+    },
+    {
+      "pitch": 39,
+      "start": 48.042,
+      "end": 48.228,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.036,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 48.228,
+      "end": 48.39,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.04,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 48.437,
+      "end": 48.646,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.044,
+      "tension": 3.25,
+      "melody_score": 0.8668181818181818
+    },
+    {
+      "pitch": 56,
+      "start": 48.971,
+      "end": 49.273,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.048,
+      "tension": 2.75,
+      "melody_score": 0.3186363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 49.273,
+      "end": 49.366,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.052,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 37,
+      "start": 49.459,
+      "end": 49.598,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.056,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 49.598,
+      "end": 50.062,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.06,
+      "tension": 1.25,
+      "melody_score": 0.5886363636363636
+    },
+    {
+      "pitch": 44,
+      "start": 50.062,
+      "end": 50.155,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.064,
+      "tension": 1.75,
+      "melody_score": 0.5331818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 50.248,
+      "end": 50.387,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.068,
+      "tension": 2.75,
+      "melody_score": 0.25045454545454543
+    },
+    {
+      "pitch": 37,
+      "start": 50.387,
+      "end": 50.48,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.072,
+      "tension": 2.25,
+      "melody_score": 0.7050000000000001
+    },
+    {
+      "pitch": 40,
+      "start": 50.48,
+      "end": 50.875,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.076,
+      "tension": 1.25,
+      "melody_score": 0.34863636363636363
+    },
+    {
+      "pitch": 44,
+      "start": 50.875,
+      "end": 50.991,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.08,
+      "tension": 1.5,
+      "melody_score": 0.5381818181818182
+    },
+    {
+      "pitch": 56,
+      "start": 51.223,
+      "end": 51.386,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.084,
+      "tension": 2.5,
+      "melody_score": 0.22136363636363637
+    },
+    {
+      "pitch": 43,
+      "start": 51.386,
+      "end": 51.479,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.088,
+      "tension": 3.5,
+      "melody_score": 0.2913636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 51.479,
+      "end": 51.618,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.092,
+      "tension": 3.0,
+      "melody_score": 0.21545454545454545
+    },
+    {
+      "pitch": 40,
+      "start": 51.664,
+      "end": 51.757,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.096,
+      "tension": 1.75,
+      "melody_score": 0.6704545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 51.757,
+      "end": 51.897,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.1,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 45,
+      "start": 51.897,
+      "end": 52.036,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.104,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 52.036,
+      "end": 52.268,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.108,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 42,
+      "start": 52.268,
+      "end": 52.361,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.112,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 52.361,
+      "end": 52.524,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.116,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 39,
+      "start": 52.547,
+      "end": 52.756,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.12,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 52,
+      "start": 52.802,
+      "end": 52.895,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.124,
+      "tension": 1.5,
+      "melody_score": 0.33136363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 52.941,
+      "end": 53.174,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.128,
+      "tension": 2.0,
+      "melody_score": 0.48545454545454547
+    },
+    {
+      "pitch": 56,
+      "start": 53.174,
+      "end": 53.267,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.132,
+      "tension": 2.25,
+      "melody_score": 0.7504545454545455
+    },
+    {
+      "pitch": 56,
+      "start": 53.406,
+      "end": 53.754,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.136,
+      "tension": 2.25,
+      "melody_score": 0.6831818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 53.754,
+      "end": 53.847,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.14,
+      "tension": 2.0,
+      "melody_score": 0.62
+    },
+    {
+      "pitch": 40,
+      "start": 53.894,
+      "end": 54.01,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.144,
+      "tension": 1.5,
+      "melody_score": 0.2413636363636364
+    },
+    {
+      "pitch": 37,
+      "start": 54.01,
+      "end": 54.126,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.148,
+      "tension": 1.5,
+      "melody_score": 0.2909090909090909
+    },
+    {
+      "pitch": 40,
+      "start": 54.126,
+      "end": 54.59,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.152,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 54.776,
+      "end": 54.938,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.156,
+      "tension": 1.5,
+      "melody_score": 0.3209090909090909
+    },
+    {
+      "pitch": 40,
+      "start": 54.938,
+      "end": 55.96,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.16,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 55.96,
+      "end": 56.123,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.164,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 45,
+      "start": 56.123,
+      "end": 56.216,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.168,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 37,
+      "start": 56.239,
+      "end": 56.401,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.172,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 49,
+      "start": 56.471,
+      "end": 56.587,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.176,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 50,
+      "start": 56.633,
+      "end": 56.726,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.18,
+      "tension": 3.5,
+      "melody_score": 0.66
+    },
+    {
+      "pitch": 42,
+      "start": 56.726,
+      "end": 56.889,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.184,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 37,
+      "start": 57.075,
+      "end": 57.237,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.188,
+      "tension": 3.25,
+      "melody_score": 0.21045454545454545
+    },
+    {
+      "pitch": 43,
+      "start": 57.237,
+      "end": 57.33,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.192,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 57.33,
+      "end": 57.423,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.196,
+      "tension": 3.5,
+      "melody_score": 0.45545454545454545
+    },
+    {
+      "pitch": 43,
+      "start": 57.423,
+      "end": 57.516,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.2,
+      "tension": 3.5,
+      "melody_score": 0.59
+    },
+    {
+      "pitch": 61,
+      "start": 57.539,
+      "end": 57.702,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.204,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 62,
+      "start": 57.911,
+      "end": 58.166,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.208,
+      "tension": 3.75,
+      "melody_score": 0.655
+    },
+    {
+      "pitch": 36,
+      "start": 58.398,
+      "end": 58.723,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.212,
+      "tension": 4.0,
+      "melody_score": 0.19136363636363635
+    },
+    {
+      "pitch": 38,
+      "start": 58.723,
+      "end": 59.048,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.216,
+      "tension": 3.5,
+      "melody_score": 0.7254545454545455
+    },
+    {
+      "pitch": 44,
+      "start": 59.048,
+      "end": 59.141,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.22,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 39,
+      "start": 59.304,
+      "end": 59.443,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.224,
+      "tension": 2.75,
+      "melody_score": 0.34045454545454545
+    },
+    {
+      "pitch": 37,
+      "start": 59.443,
+      "end": 60.86,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.228,
+      "tension": 3.0,
+      "melody_score": 0.6900000000000001
+    },
+    {
+      "pitch": 45,
+      "start": 60.86,
+      "end": 61.208,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.232,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 41,
+      "start": 61.208,
+      "end": 61.324,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.236,
+      "tension": 3.5,
+      "melody_score": 0.49818181818181817
+    },
+    {
+      "pitch": 61,
+      "start": 61.347,
+      "end": 61.463,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.24,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 61.463,
+      "end": 61.556,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.244,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 61.556,
+      "end": 61.672,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.248,
+      "tension": 3.5,
+      "melody_score": 0.18272727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 61.672,
+      "end": 62.276,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.252,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 62.462,
+      "end": 62.764,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.256,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 62.903,
+      "end": 63.019,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.26,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 63.089,
+      "end": 63.507,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.264,
+      "tension": 1.25,
+      "melody_score": 0.9750000000000001
+    },
+    {
+      "pitch": 44,
+      "start": 63.507,
+      "end": 63.623,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.268,
+      "tension": 1.75,
+      "melody_score": 0.2931818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 63.716,
+      "end": 63.855,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.272,
+      "tension": 2.0,
+      "melody_score": 0.2654545454545455
+    },
+    {
+      "pitch": 40,
+      "start": 63.925,
+      "end": 64.853,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.276,
+      "tension": 1.75,
+      "melody_score": 0.875
+    },
+    {
+      "pitch": 38,
+      "start": 64.853,
+      "end": 65.062,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.28,
+      "tension": 3.0,
+      "melody_score": 0.6
+    },
+    {
+      "pitch": 38,
+      "start": 65.132,
+      "end": 65.341,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.284,
+      "tension": 3.75,
+      "melody_score": 0.6531818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 65.341,
+      "end": 65.736,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.288,
+      "tension": 3.25,
+      "melody_score": 0.2631818181818182
+    },
+    {
+      "pitch": 63,
+      "start": 65.852,
+      "end": 65.945,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.292,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 65.945,
+      "end": 66.177,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.296,
+      "tension": 3.5,
+      "melody_score": 0.2913636363636364
+    },
+    {
+      "pitch": 42,
+      "start": 66.177,
+      "end": 66.873,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.3,
+      "tension": 3.25,
+      "melody_score": 0.5031818181818182
+    },
+    {
+      "pitch": 57,
+      "start": 66.943,
+      "end": 67.082,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.304,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 56,
+      "start": 67.152,
+      "end": 67.361,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.308,
+      "tension": 2.75,
+      "melody_score": 0.8768181818181818
+    },
+    {
+      "pitch": 36,
+      "start": 67.384,
+      "end": 68.22,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.312,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 39,
+      "start": 68.243,
+      "end": 68.336,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.316,
+      "tension": 3.25,
+      "melody_score": 0.5486363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 68.406,
+      "end": 68.569,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.32,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 68.638,
+      "end": 68.963,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.324,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 69.033,
+      "end": 69.335,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.328,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 69.451,
+      "end": 69.544,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.332,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 69.66,
+      "end": 69.799,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.336,
+      "tension": 3.5,
+      "melody_score": 0.93
+    },
+    {
+      "pitch": 54,
+      "start": 69.892,
+      "end": 70.24,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.34,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 70.287,
+      "end": 70.449,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.344,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 70.565,
+      "end": 70.705,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.348,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 70.705,
+      "end": 70.821,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.352,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 70.937,
+      "end": 71.146,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.356,
+      "tension": 2.75,
+      "melody_score": 0.7631818181818182
+    },
+    {
+      "pitch": 56,
+      "start": 71.401,
+      "end": 71.564,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.36,
+      "tension": 2.25,
+      "melody_score": 0.6604545454545455
+    },
+    {
+      "pitch": 56,
+      "start": 71.587,
+      "end": 71.68,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.364,
+      "tension": 2.25,
+      "melody_score": 0.6831818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 71.68,
+      "end": 71.819,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.368,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 37,
+      "start": 71.889,
+      "end": 72.028,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.372,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 72.028,
+      "end": 72.516,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.376,
+      "tension": 1.25,
+      "melody_score": 0.5886363636363636
+    },
+    {
+      "pitch": 44,
+      "start": 72.516,
+      "end": 72.609,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.38,
+      "tension": 1.75,
+      "melody_score": 0.5331818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 72.702,
+      "end": 72.818,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.384,
+      "tension": 2.75,
+      "melody_score": 0.25045454545454543
+    },
+    {
+      "pitch": 37,
+      "start": 72.818,
+      "end": 72.911,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.388,
+      "tension": 2.25,
+      "melody_score": 0.7050000000000001
+    },
+    {
+      "pitch": 40,
+      "start": 72.911,
+      "end": 73.305,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.392,
+      "tension": 1.25,
+      "melody_score": 0.34863636363636363
+    },
+    {
+      "pitch": 44,
+      "start": 73.305,
+      "end": 73.398,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.396,
+      "tension": 1.0,
+      "melody_score": 0.5481818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 73.491,
+      "end": 73.63,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.4,
+      "tension": 1.0,
+      "melody_score": 0.3081818181818182
+    },
+    {
+      "pitch": 56,
+      "start": 73.654,
+      "end": 73.816,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.404,
+      "tension": 1.75,
+      "melody_score": 0.2363636363636364
+    },
+    {
+      "pitch": 39,
+      "start": 73.816,
+      "end": 73.956,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.408,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 39,
+      "start": 74.188,
+      "end": 74.304,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.412,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 74.304,
+      "end": 74.466,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.416,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 74.466,
+      "end": 74.699,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.42,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 42,
+      "start": 74.699,
+      "end": 74.791,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.424,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 74.791,
+      "end": 74.954,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.428,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 74.954,
+      "end": 75.047,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.432,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 75.047,
+      "end": 75.14,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.436,
+      "tension": 2.75,
+      "melody_score": 0.19772727272727272
+    },
+    {
+      "pitch": 52,
+      "start": 75.209,
+      "end": 75.395,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.44,
+      "tension": 1.75,
+      "melody_score": 0.32636363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 75.395,
+      "end": 75.651,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.444,
+      "tension": 2.0,
+      "melody_score": 0.48545454545454547
+    },
+    {
+      "pitch": 56,
+      "start": 75.883,
+      "end": 76.185,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.448,
+      "tension": 2.5,
+      "melody_score": 0.7454545454545455
+    },
+    {
+      "pitch": 54,
+      "start": 76.185,
+      "end": 76.301,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.452,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 37,
+      "start": 76.37,
+      "end": 76.51,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.456,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 76.51,
+      "end": 76.974,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.46,
+      "tension": 1.25,
+      "melody_score": 0.5886363636363636
+    },
+    {
+      "pitch": 44,
+      "start": 76.974,
+      "end": 77.09,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.464,
+      "tension": 1.75,
+      "melody_score": 0.5331818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 77.183,
+      "end": 77.322,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.468,
+      "tension": 3.0,
+      "melody_score": 0.24545454545454543
+    },
+    {
+      "pitch": 41,
+      "start": 77.392,
+      "end": 78.089,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.472,
+      "tension": 3.0,
+      "melody_score": 0.6454545454545455
+    },
+    {
+      "pitch": 59,
+      "start": 78.089,
+      "end": 78.321,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.476,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 37,
+      "start": 78.344,
+      "end": 78.553,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.48,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 39,
+      "start": 78.553,
+      "end": 78.716,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.484,
+      "tension": 3.0,
+      "melody_score": 0.7354545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 78.716,
+      "end": 78.809,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.488,
+      "tension": 3.0,
+      "melody_score": 0.6
+    },
+    {
+      "pitch": 45,
+      "start": 78.809,
+      "end": 79.087,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.492,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 43,
+      "start": 79.157,
+      "end": 79.319,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.496,
+      "tension": 3.5,
+      "melody_score": 0.68
+    },
+    {
+      "pitch": 61,
+      "start": 79.319,
+      "end": 79.412,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.5,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 42,
+      "start": 79.412,
+      "end": 79.505,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.504,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 37,
+      "start": 79.575,
+      "end": 79.668,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.508,
+      "tension": 3.25,
+      "melody_score": 0.21045454545454545
+    },
+    {
+      "pitch": 43,
+      "start": 79.668,
+      "end": 79.784,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.512,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 61,
+      "start": 79.784,
+      "end": 80.202,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.516,
+      "tension": 3.5,
+      "melody_score": 0.17136363636363638
+    },
+    {
+      "pitch": 43,
+      "start": 80.202,
+      "end": 80.341,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.52,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 62,
+      "start": 80.341,
+      "end": 80.55,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.524,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 42,
+      "start": 80.55,
+      "end": 80.829,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.528,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 39,
+      "start": 80.945,
+      "end": 81.038,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.532,
+      "tension": 3.0,
+      "melody_score": 0.26090909090909087
+    },
+    {
+      "pitch": 37,
+      "start": 81.038,
+      "end": 81.502,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.536,
+      "tension": 3.0,
+      "melody_score": 0.6900000000000001
+    },
+    {
+      "pitch": 37,
+      "start": 81.665,
+      "end": 83.035,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.54,
+      "tension": 2.75,
+      "melody_score": 0.6731818181818182
+    },
+    {
+      "pitch": 44,
+      "start": 83.035,
+      "end": 83.174,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.544,
+      "tension": 2.75,
+      "melody_score": 0.22772727272727272
+    },
+    {
+      "pitch": 38,
+      "start": 83.174,
+      "end": 83.267,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.548,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 83.267,
+      "end": 83.569,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.552,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 42,
+      "start": 83.638,
+      "end": 83.778,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.556,
+      "tension": 3.0,
+      "melody_score": 0.5309090909090909
+    },
+    {
+      "pitch": 61,
+      "start": 83.778,
+      "end": 83.894,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.56,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 83.963,
+      "end": 84.103,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.564,
+      "tension": 3.5,
+      "melody_score": 0.2913636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 84.103,
+      "end": 84.219,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.568,
+      "tension": 3.5,
+      "melody_score": 0.30272727272727273
+    },
+    {
+      "pitch": 53,
+      "start": 84.219,
+      "end": 84.428,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.572,
+      "tension": 3.5,
+      "melody_score": 0.17136363636363638
+    },
+    {
+      "pitch": 45,
+      "start": 84.428,
+      "end": 84.521,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.576,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 63,
+      "start": 84.521,
+      "end": 84.614,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.58,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 63,
+      "start": 84.637,
+      "end": 84.73,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.584,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 84.892,
+      "end": 85.194,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.588,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 41,
+      "start": 85.287,
+      "end": 85.38,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.592,
+      "tension": 2.75,
+      "melody_score": 0.24318181818181817
+    },
+    {
+      "pitch": 40,
+      "start": 85.519,
+      "end": 85.937,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.596,
+      "tension": 1.5,
+      "melody_score": 0.9018181818181819
+    },
+    {
+      "pitch": 44,
+      "start": 85.937,
+      "end": 86.053,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.6,
+      "tension": 1.75,
+      "melody_score": 0.2931818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 86.146,
+      "end": 86.262,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.604,
+      "tension": 2.75,
+      "melody_score": 0.25045454545454543
+    },
+    {
+      "pitch": 37,
+      "start": 86.262,
+      "end": 86.355,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.608,
+      "tension": 2.25,
+      "melody_score": 0.7050000000000001
+    },
+    {
+      "pitch": 40,
+      "start": 86.355,
+      "end": 87.284,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.612,
+      "tension": 1.75,
+      "melody_score": 0.3386363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 87.284,
+      "end": 87.539,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.616,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 39,
+      "start": 87.562,
+      "end": 87.748,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.62,
+      "tension": 3.25,
+      "melody_score": 0.845
+    },
+    {
+      "pitch": 42,
+      "start": 87.748,
+      "end": 88.166,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.624,
+      "tension": 3.25,
+      "melody_score": 0.5486363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 88.491,
+      "end": 88.584,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.628,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 88.584,
+      "end": 89.281,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.632,
+      "tension": 3.25,
+      "melody_score": 0.2631818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 89.35,
+      "end": 89.443,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.636,
+      "tension": 3.25,
+      "melody_score": 0.6631818181818182
+    },
+    {
+      "pitch": 43,
+      "start": 89.513,
+      "end": 89.652,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.64,
+      "tension": 3.5,
+      "melody_score": 0.84
+    },
+    {
+      "pitch": 57,
+      "start": 89.652,
+      "end": 89.792,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.644,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 36,
+      "start": 89.815,
+      "end": 90.093,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.648,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 47,
+      "start": 90.093,
+      "end": 90.186,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.652,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 36,
+      "start": 90.186,
+      "end": 90.581,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.656,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 90.651,
+      "end": 90.86,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.66,
+      "tension": 3.75,
+      "melody_score": 0.7204545454545455
+    },
+    {
+      "pitch": 45,
+      "start": 90.86,
+      "end": 90.953,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.664,
+      "tension": 3.0,
+      "melody_score": 0.22272727272727272
+    },
+    {
+      "pitch": 56,
+      "start": 90.953,
+      "end": 91.069,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.668,
+      "tension": 2.5,
+      "melody_score": 0.1913636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 91.069,
+      "end": 91.742,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.672,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 37,
+      "start": 91.881,
+      "end": 91.997,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.676,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 45,
+      "start": 92.23,
+      "end": 92.346,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.68,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 92.346,
+      "end": 92.648,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.684,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 54,
+      "start": 92.717,
+      "end": 92.903,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.688,
+      "tension": 3.25,
+      "melody_score": 0.7531818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 92.973,
+      "end": 93.089,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.692,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 93.089,
+      "end": 93.182,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.696,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 54,
+      "start": 93.182,
+      "end": 94.11,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.7,
+      "tension": 2.75,
+      "melody_score": 0.18636363636363634
+    },
+    {
+      "pitch": 56,
+      "start": 94.11,
+      "end": 94.203,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.704,
+      "tension": 2.5,
+      "melody_score": 0.47545454545454546
+    },
+    {
+      "pitch": 39,
+      "start": 94.273,
+      "end": 94.389,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.708,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 37,
+      "start": 94.389,
+      "end": 94.505,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.712,
+      "tension": 3.25,
+      "melody_score": 0.41500000000000004
+    },
+    {
+      "pitch": 41,
+      "start": 94.505,
+      "end": 94.993,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.716,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 95.109,
+      "end": 95.202,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.72,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 37,
+      "start": 95.202,
+      "end": 95.318,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.724,
+      "tension": 2.25,
+      "melody_score": 0.7050000000000001
+    },
+    {
+      "pitch": 40,
+      "start": 95.318,
+      "end": 96.131,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.728,
+      "tension": 1.25,
+      "melody_score": 0.34863636363636363
+    },
+    {
+      "pitch": 56,
+      "start": 96.131,
+      "end": 96.247,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.732,
+      "tension": 1.5,
+      "melody_score": 0.2413636363636364
+    },
+    {
+      "pitch": 44,
+      "start": 96.247,
+      "end": 96.34,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.736,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 96.34,
+      "end": 96.479,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.74,
+      "tension": 2.5,
+      "melody_score": 0.1913636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 96.525,
+      "end": 96.618,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.744,
+      "tension": 2.0,
+      "melody_score": 0.7554545454545455
+    },
+    {
+      "pitch": 38,
+      "start": 96.618,
+      "end": 96.758,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.748,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 45,
+      "start": 96.758,
+      "end": 96.943,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.752,
+      "tension": 3.25,
+      "melody_score": 0.21772727272727274
+    },
+    {
+      "pitch": 54,
+      "start": 96.943,
+      "end": 97.129,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.756,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 42,
+      "start": 97.129,
+      "end": 97.222,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.76,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 97.222,
+      "end": 97.384,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.764,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 39,
+      "start": 97.384,
+      "end": 97.57,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.768,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 97.57,
+      "end": 97.756,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.772,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 97.826,
+      "end": 98.035,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.776,
+      "tension": 3.75,
+      "melody_score": 0.16636363636363638
+    },
+    {
+      "pitch": 55,
+      "start": 98.035,
+      "end": 98.174,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.78,
+      "tension": 3.5,
+      "melody_score": 0.45545454545454545
+    },
+    {
+      "pitch": 56,
+      "start": 98.313,
+      "end": 98.731,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.784,
+      "tension": 2.75,
+      "melody_score": 0.9450000000000001
+    },
+    {
+      "pitch": 39,
+      "start": 98.778,
+      "end": 99.66,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.788,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 37,
+      "start": 99.66,
+      "end": 99.776,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.792,
+      "tension": 2.25,
+      "melody_score": 0.43500000000000005
+    },
+    {
+      "pitch": 40,
+      "start": 99.776,
+      "end": 100.821,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.796,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 100.821,
+      "end": 100.96,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.8,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 39,
+      "start": 100.96,
+      "end": 101.123,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.804,
+      "tension": 3.0,
+      "melody_score": 0.6454545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 101.123,
+      "end": 101.216,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.808,
+      "tension": 2.25,
+      "melody_score": 0.615
+    },
+    {
+      "pitch": 40,
+      "start": 101.216,
+      "end": 101.611,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.812,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 101.889,
+      "end": 102.028,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.816,
+      "tension": 1.5,
+      "melody_score": 0.3209090909090909
+    },
+    {
+      "pitch": 40,
+      "start": 102.028,
+      "end": 102.957,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.82,
+      "tension": 0.75,
+      "melody_score": 0.35863636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 103.004,
+      "end": 103.166,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.824,
+      "tension": 0.0,
+      "melody_score": 0.7281818181818183
+    },
+    {
+      "pitch": 40,
+      "start": 103.213,
+      "end": 103.329,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.828,
+      "tension": 0.75,
+      "melody_score": 0.7131818181818183
+    },
+    {
+      "pitch": 37,
+      "start": 103.329,
+      "end": 103.445,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.832,
+      "tension": 1.5,
+      "melody_score": 0.3209090909090909
+    },
+    {
+      "pitch": 40,
+      "start": 103.445,
+      "end": 103.863,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.836,
+      "tension": 1.25,
+      "melody_score": 0.34863636363636363
+    },
+    {
+      "pitch": 44,
+      "start": 103.863,
+      "end": 104.025,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.84,
+      "tension": 1.75,
+      "melody_score": 0.5331818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 104.072,
+      "end": 104.211,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.844,
+      "tension": 2.75,
+      "melody_score": 0.25045454545454543
+    },
+    {
+      "pitch": 37,
+      "start": 104.211,
+      "end": 104.304,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.848,
+      "tension": 3.25,
+      "melody_score": 0.685
+    },
+    {
+      "pitch": 41,
+      "start": 104.304,
+      "end": 105.233,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.852,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 105.256,
+      "end": 105.442,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.856,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 105.488,
+      "end": 106.138,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.86,
+      "tension": 3.5,
+      "melody_score": 0.84
+    },
+    {
+      "pitch": 39,
+      "start": 106.394,
+      "end": 106.533,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.864,
+      "tension": 3.25,
+      "melody_score": 0.935
+    },
+    {
+      "pitch": 37,
+      "start": 106.533,
+      "end": 107.485,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.868,
+      "tension": 2.25,
+      "melody_score": 0.615
+    },
+    {
+      "pitch": 40,
+      "start": 107.485,
+      "end": 107.764,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.872,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 45,
+      "start": 107.764,
+      "end": 107.857,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.876,
+      "tension": 2.25,
+      "melody_score": 0.5004545454545455
+    },
+    {
+      "pitch": 45,
+      "start": 107.926,
+      "end": 108.6,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.88,
+      "tension": 3.25,
+      "melody_score": 0.6631818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 108.6,
+      "end": 108.785,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.884,
+      "tension": 3.5,
+      "melody_score": 0.21272727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 108.785,
+      "end": 109.157,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.888,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 109.227,
+      "end": 109.366,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.892,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 109.714,
+      "end": 110.573,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.896,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 42,
+      "start": 110.573,
+      "end": 110.666,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.9,
+      "tension": 3.25,
+      "melody_score": 0.33045454545454545
+    },
+    {
+      "pitch": 36,
+      "start": 110.852,
+      "end": 111.595,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.904,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 44,
+      "start": 111.665,
+      "end": 112.292,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.908,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 39,
+      "start": 112.292,
+      "end": 112.385,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.912,
+      "tension": 2.75,
+      "melody_score": 0.34045454545454545
+    },
+    {
+      "pitch": 37,
+      "start": 112.385,
+      "end": 112.872,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.916,
+      "tension": 3.25,
+      "melody_score": 0.685
+    },
+    {
+      "pitch": 43,
+      "start": 112.872,
+      "end": 112.965,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.92,
+      "tension": 3.75,
+      "melody_score": 0.19636363636363635
+    },
+    {
+      "pitch": 38,
+      "start": 113.058,
+      "end": 114.474,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.924,
+      "tension": 4.0,
+      "melody_score": 0.31545454545454543
+    },
+    {
+      "pitch": 43,
+      "start": 114.474,
+      "end": 114.567,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.928,
+      "tension": 3.75,
+      "melody_score": 0.23045454545454547
+    },
+    {
+      "pitch": 37,
+      "start": 114.567,
+      "end": 114.683,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.932,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 44,
+      "start": 114.683,
+      "end": 115.171,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.936,
+      "tension": 2.5,
+      "melody_score": 0.32272727272727275
+    },
+    {
+      "pitch": 37,
+      "start": 115.426,
+      "end": 115.542,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.94,
+      "tension": 2.5,
+      "melody_score": 0.32272727272727275
+    },
+    {
+      "pitch": 44,
+      "start": 115.542,
+      "end": 116.053,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.944,
+      "tension": 1.75,
+      "melody_score": 0.33772727272727276
+    },
+    {
+      "pitch": 64,
+      "start": 116.053,
+      "end": 116.193,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.948,
+      "tension": 0.75,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 83,
+      "start": 116.193,
+      "end": 116.703,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.952,
+      "tension": 1.25,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 45,
+      "start": 116.703,
+      "end": 117.423,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.956,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 38,
+      "start": 117.656,
+      "end": 117.748,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.96,
+      "tension": 3.5,
+      "melody_score": 0.18272727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 117.748,
+      "end": 118.329,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.964,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 118.375,
+      "end": 118.724,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.968,
+      "tension": 3.25,
+      "melody_score": 0.7531818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 118.724,
+      "end": 118.863,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.972,
+      "tension": 3.75,
+      "melody_score": 0.20772727272727273
+    },
+    {
+      "pitch": 36,
+      "start": 118.863,
+      "end": 119.049,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.976,
+      "tension": 4.0,
+      "melody_score": 0.4
+    },
+    {
+      "pitch": 38,
+      "start": 119.049,
+      "end": 119.142,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.98,
+      "tension": 4.0,
+      "melody_score": 0.6254545454545455
+    },
+    {
+      "pitch": 36,
+      "start": 119.142,
+      "end": 119.327,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.984,
+      "tension": 3.75,
+      "melody_score": 0.585
+    },
+    {
+      "pitch": 78,
+      "start": 119.327,
+      "end": 119.443,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.988,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 36,
+      "start": 119.536,
+      "end": 119.722,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.992,
+      "tension": 3.5,
+      "melody_score": 0.2913636363636364
+    },
+    {
+      "pitch": 57,
+      "start": 120.094,
+      "end": 120.186,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 0.996,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 57,
+      "start": 120.21,
+      "end": 120.349,
+      "velocity": 127,
+      "phrase_id": 14,
+      "phrase_position": 1.0,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 121.185,
+      "end": 121.324,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 121.371,
+      "end": 121.998,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.00684931506849315,
+      "tension": 1.5,
+      "melody_score": 0.9700000000000001
+    },
+    {
+      "pitch": 39,
+      "start": 122.044,
+      "end": 122.183,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0136986301369863,
+      "tension": 1.5,
+      "melody_score": 0.8118181818181819
+    },
+    {
+      "pitch": 40,
+      "start": 122.23,
+      "end": 123.228,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.02054794520547945,
+      "tension": 1.5,
+      "melody_score": 0.88
+    },
+    {
+      "pitch": 37,
+      "start": 123.228,
+      "end": 123.391,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0273972602739726,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 45,
+      "start": 123.46,
+      "end": 123.553,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.03424657534246575,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 123.623,
+      "end": 123.925,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0410958904109589,
+      "tension": 2.25,
+      "melody_score": 0.7731818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 123.971,
+      "end": 124.064,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.04794520547945205,
+      "tension": 1.5,
+      "melody_score": 0.27545454545454545
+    },
+    {
+      "pitch": 61,
+      "start": 124.064,
+      "end": 124.296,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0547945205479452,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 37,
+      "start": 124.296,
+      "end": 124.552,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.06164383561643835,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 62,
+      "start": 124.552,
+      "end": 124.784,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0684931506849315,
+      "tension": 3.5,
+      "melody_score": 0.2913636363636364
+    },
+    {
+      "pitch": 42,
+      "start": 124.83,
+      "end": 124.97,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.07534246575342465,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 125.132,
+      "end": 125.69,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0821917808219178,
+      "tension": 3.0,
+      "melody_score": 0.5536363636363636
+    },
+    {
+      "pitch": 42,
+      "start": 125.736,
+      "end": 125.829,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.08904109589041095,
+      "tension": 3.0,
+      "melody_score": 0.2909090909090909
+    },
+    {
+      "pitch": 42,
+      "start": 125.875,
+      "end": 126.642,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.0958904109589041,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 126.711,
+      "end": 127.663,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.10273972602739725,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 127.663,
+      "end": 127.872,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.1095890410958904,
+      "tension": 3.0,
+      "melody_score": 0.2909090909090909
+    },
+    {
+      "pitch": 39,
+      "start": 127.919,
+      "end": 128.012,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.11643835616438356,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 128.012,
+      "end": 128.104,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.1232876712328767,
+      "tension": 2.25,
+      "melody_score": 0.615
+    },
+    {
+      "pitch": 40,
+      "start": 128.104,
+      "end": 129.939,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.13013698630136986,
+      "tension": 1.75,
+      "melody_score": 0.3386363636363636
+    },
+    {
+      "pitch": 36,
+      "start": 129.939,
+      "end": 130.171,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.136986301369863,
+      "tension": 2.75,
+      "melody_score": 0.2731818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 130.171,
+      "end": 130.728,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.14383561643835616,
+      "tension": 3.5,
+      "melody_score": 0.30363636363636365
+    },
+    {
+      "pitch": 41,
+      "start": 130.728,
+      "end": 130.984,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.1506849315068493,
+      "tension": 3.5,
+      "melody_score": 0.7254545454545455
+    },
+    {
+      "pitch": 39,
+      "start": 130.984,
+      "end": 132.307,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.15753424657534246,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 45,
+      "start": 132.423,
+      "end": 132.54,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.1643835616438356,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 132.609,
+      "end": 133.166,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.17123287671232876,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 133.213,
+      "end": 133.306,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.1780821917808219,
+      "tension": 3.25,
+      "melody_score": 0.6631818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 133.306,
+      "end": 133.492,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.18493150684931506,
+      "tension": 3.5,
+      "melody_score": 0.21272727272727274
+    },
+    {
+      "pitch": 61,
+      "start": 133.538,
+      "end": 133.7,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.1917808219178082,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 133.793,
+      "end": 134.026,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.19863013698630136,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 134.095,
+      "end": 134.351,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2054794520547945,
+      "tension": 2.25,
+      "melody_score": 0.7731818181818182
+    },
+    {
+      "pitch": 52,
+      "start": 134.351,
+      "end": 134.444,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.21232876712328766,
+      "tension": 1.75,
+      "melody_score": 0.24772727272727274
+    },
+    {
+      "pitch": 38,
+      "start": 134.769,
+      "end": 134.861,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2191780821917808,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 42,
+      "start": 134.861,
+      "end": 135.558,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.22602739726027396,
+      "tension": 3.5,
+      "melody_score": 0.49818181818181817
+    },
+    {
+      "pitch": 38,
+      "start": 135.558,
+      "end": 135.721,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2328767123287671,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 135.721,
+      "end": 136.092,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.23972602739726026,
+      "tension": 3.25,
+      "melody_score": 0.2631818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 136.139,
+      "end": 136.231,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2465753424657534,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 136.301,
+      "end": 136.673,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2534246575342466,
+      "tension": 3.25,
+      "melody_score": 0.6631818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 136.673,
+      "end": 136.835,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2602739726027397,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 136.905,
+      "end": 137.091,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2671232876712329,
+      "tension": 2.5,
+      "melody_score": 0.8818181818181818
+    },
+    {
+      "pitch": 40,
+      "start": 137.091,
+      "end": 137.509,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.273972602739726,
+      "tension": 0.75,
+      "melody_score": 0.35863636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 137.578,
+      "end": 137.671,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2808219178082192,
+      "tension": 0.75,
+      "melody_score": 0.7131818181818183
+    },
+    {
+      "pitch": 39,
+      "start": 137.718,
+      "end": 138.786,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2876712328767123,
+      "tension": 2.5,
+      "melody_score": 0.7918181818181819
+    },
+    {
+      "pitch": 41,
+      "start": 138.786,
+      "end": 139.134,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.2945205479452055,
+      "tension": 3.5,
+      "melody_score": 0.6354545454545455
+    },
+    {
+      "pitch": 39,
+      "start": 139.134,
+      "end": 139.227,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3013698630136986,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 37,
+      "start": 139.227,
+      "end": 139.343,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3082191780821918,
+      "tension": 3.25,
+      "melody_score": 0.685
+    },
+    {
+      "pitch": 41,
+      "start": 139.343,
+      "end": 140.016,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3150684931506849,
+      "tension": 3.75,
+      "melody_score": 0.2531818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 140.016,
+      "end": 140.202,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3219178082191781,
+      "tension": 3.75,
+      "melody_score": 0.2759090909090909
+    },
+    {
+      "pitch": 42,
+      "start": 140.202,
+      "end": 140.527,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3287671232876712,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 50,
+      "start": 140.527,
+      "end": 140.62,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3356164383561644,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 49,
+      "start": 140.69,
+      "end": 140.806,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3424657534246575,
+      "tension": 3.25,
+      "melody_score": 0.8668181818181818
+    },
+    {
+      "pitch": 42,
+      "start": 140.806,
+      "end": 141.177,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3493150684931507,
+      "tension": 3.25,
+      "melody_score": 0.21772727272727274
+    },
+    {
+      "pitch": 38,
+      "start": 141.177,
+      "end": 141.317,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3561643835616438,
+      "tension": 3.5,
+      "melody_score": 0.22818181818181818
+    },
+    {
+      "pitch": 42,
+      "start": 141.317,
+      "end": 141.41,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.363013698630137,
+      "tension": 3.25,
+      "melody_score": 0.2631818181818182
+    },
+    {
+      "pitch": 37,
+      "start": 141.41,
+      "end": 141.619,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3698630136986301,
+      "tension": 3.25,
+      "melody_score": 0.24045454545454548
+    },
+    {
+      "pitch": 43,
+      "start": 141.619,
+      "end": 141.944,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3767123287671233,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 44,
+      "start": 141.99,
+      "end": 142.245,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3835616438356164,
+      "tension": 2.75,
+      "melody_score": 0.675
+    },
+    {
+      "pitch": 37,
+      "start": 142.269,
+      "end": 142.524,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3904109589041096,
+      "tension": 2.5,
+      "melody_score": 0.23272727272727275
+    },
+    {
+      "pitch": 44,
+      "start": 142.571,
+      "end": 142.756,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.3972602739726027,
+      "tension": 2.25,
+      "melody_score": 0.32772727272727276
+    },
+    {
+      "pitch": 44,
+      "start": 142.826,
+      "end": 143.732,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4041095890410959,
+      "tension": 2.5,
+      "melody_score": 0.7681818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 143.732,
+      "end": 143.848,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.410958904109589,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 143.848,
+      "end": 144.475,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4178082191780822,
+      "tension": 3.5,
+      "melody_score": 0.30272727272727273
+    },
+    {
+      "pitch": 38,
+      "start": 144.475,
+      "end": 144.73,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4246575342465753,
+      "tension": 3.5,
+      "melody_score": 0.30272727272727273
+    },
+    {
+      "pitch": 45,
+      "start": 144.73,
+      "end": 144.939,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4315068493150685,
+      "tension": 3.0,
+      "melody_score": 0.31272727272727274
+    },
+    {
+      "pitch": 68,
+      "start": 144.985,
+      "end": 145.194,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4383561643835616,
+      "tension": 2.5,
+      "melody_score": 0.1913636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 145.334,
+      "end": 145.636,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4452054794520548,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 38,
+      "start": 145.636,
+      "end": 146.054,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4520547945205479,
+      "tension": 2.75,
+      "melody_score": 0.19772727272727272
+    },
+    {
+      "pitch": 40,
+      "start": 146.054,
+      "end": 146.727,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4589041095890411,
+      "tension": 2.0,
+      "melody_score": 0.7554545454545455
+    },
+    {
+      "pitch": 38,
+      "start": 146.727,
+      "end": 146.936,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4657534246575342,
+      "tension": 2.0,
+      "melody_score": 0.62
+    },
+    {
+      "pitch": 40,
+      "start": 146.936,
+      "end": 147.423,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4726027397260274,
+      "tension": 1.5,
+      "melody_score": 0.6754545454545455
+    },
+    {
+      "pitch": 68,
+      "start": 147.447,
+      "end": 147.586,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4794520547945205,
+      "tension": 2.0,
+      "melody_score": 0.23136363636363638
+    },
+    {
+      "pitch": 41,
+      "start": 147.586,
+      "end": 148.143,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4863013698630137,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 39,
+      "start": 148.143,
+      "end": 148.352,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.4931506849315068,
+      "tension": 3.25,
+      "melody_score": 0.41500000000000004
+    },
+    {
+      "pitch": 45,
+      "start": 148.352,
+      "end": 148.468,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 43,
+      "start": 148.561,
+      "end": 148.84,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5068493150684932,
+      "tension": 3.5,
+      "melody_score": 0.68
+    },
+    {
+      "pitch": 61,
+      "start": 148.84,
+      "end": 148.933,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5136986301369864,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 37,
+      "start": 149.095,
+      "end": 149.211,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5205479452054794,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 44,
+      "start": 149.211,
+      "end": 149.374,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5273972602739726,
+      "tension": 2.75,
+      "melody_score": 0.31772727272727275
+    },
+    {
+      "pitch": 43,
+      "start": 149.629,
+      "end": 149.862,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5342465753424658,
+      "tension": 3.5,
+      "melody_score": 0.8618181818181818
+    },
+    {
+      "pitch": 62,
+      "start": 149.908,
+      "end": 150.071,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.541095890410959,
+      "tension": 4.0,
+      "melody_score": 0.19136363636363635
+    },
+    {
+      "pitch": 38,
+      "start": 150.094,
+      "end": 150.28,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.547945205479452,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 42,
+      "start": 150.28,
+      "end": 150.396,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5547945205479452,
+      "tension": 3.25,
+      "melody_score": 0.5031818181818182
+    },
+    {
+      "pitch": 39,
+      "start": 150.465,
+      "end": 150.558,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5616438356164384,
+      "tension": 3.0,
+      "melody_score": 0.2909090909090909
+    },
+    {
+      "pitch": 37,
+      "start": 150.558,
+      "end": 151.046,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5684931506849316,
+      "tension": 3.0,
+      "melody_score": 0.6900000000000001
+    },
+    {
+      "pitch": 37,
+      "start": 151.208,
+      "end": 152.369,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5753424657534246,
+      "tension": 3.25,
+      "melody_score": 0.6631818181818182
+    },
+    {
+      "pitch": 43,
+      "start": 152.369,
+      "end": 152.625,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5821917808219178,
+      "tension": 3.5,
+      "melody_score": 0.20136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 152.625,
+      "end": 152.718,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.589041095890411,
+      "tension": 3.5,
+      "melody_score": 0.45545454545454545
+    },
+    {
+      "pitch": 38,
+      "start": 152.718,
+      "end": 152.811,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.5958904109589042,
+      "tension": 3.5,
+      "melody_score": 0.21272727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 152.811,
+      "end": 153.182,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6027397260273972,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 42,
+      "start": 153.182,
+      "end": 153.321,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6095890410958904,
+      "tension": 3.25,
+      "melody_score": 0.5259090909090909
+    },
+    {
+      "pitch": 38,
+      "start": 153.484,
+      "end": 153.646,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6164383561643836,
+      "tension": 3.5,
+      "melody_score": 0.49818181818181817
+    },
+    {
+      "pitch": 45,
+      "start": 153.646,
+      "end": 154.088,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6232876712328768,
+      "tension": 3.25,
+      "melody_score": 0.21772727272727274
+    },
+    {
+      "pitch": 63,
+      "start": 154.088,
+      "end": 154.297,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6301369863013698,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 45,
+      "start": 154.436,
+      "end": 154.598,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.636986301369863,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 37,
+      "start": 154.598,
+      "end": 154.831,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6438356164383562,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 39,
+      "start": 154.877,
+      "end": 155.249,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6506849315068494,
+      "tension": 3.25,
+      "melody_score": 0.7304545454545455
+    },
+    {
+      "pitch": 41,
+      "start": 155.249,
+      "end": 155.527,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6575342465753424,
+      "tension": 3.5,
+      "melody_score": 0.7254545454545455
+    },
+    {
+      "pitch": 39,
+      "start": 155.667,
+      "end": 155.783,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6643835616438356,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 37,
+      "start": 155.783,
+      "end": 155.876,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6712328767123288,
+      "tension": 2.25,
+      "melody_score": 0.7050000000000001
+    },
+    {
+      "pitch": 40,
+      "start": 155.876,
+      "end": 157.013,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.678082191780822,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 157.106,
+      "end": 157.292,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.684931506849315,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 42,
+      "start": 157.292,
+      "end": 157.71,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6917808219178082,
+      "tension": 2.75,
+      "melody_score": 0.25045454545454543
+    },
+    {
+      "pitch": 44,
+      "start": 157.826,
+      "end": 157.942,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.6986301369863014,
+      "tension": 2.5,
+      "melody_score": 0.7454545454545455
+    },
+    {
+      "pitch": 42,
+      "start": 158.105,
+      "end": 159.08,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7054794520547946,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 37,
+      "start": 159.08,
+      "end": 159.614,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7123287671232876,
+      "tension": 3.25,
+      "melody_score": 0.24045454545454548
+    },
+    {
+      "pitch": 36,
+      "start": 159.66,
+      "end": 160.125,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7191780821917808,
+      "tension": 3.5,
+      "melody_score": 0.8618181818181818
+    },
+    {
+      "pitch": 39,
+      "start": 160.148,
+      "end": 160.264,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.726027397260274,
+      "tension": 3.25,
+      "melody_score": 0.30863636363636365
+    },
+    {
+      "pitch": 37,
+      "start": 160.264,
+      "end": 160.38,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7328767123287672,
+      "tension": 3.0,
+      "melody_score": 0.6
+    },
+    {
+      "pitch": 45,
+      "start": 160.38,
+      "end": 160.52,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7397260273972602,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 160.566,
+      "end": 160.891,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7465753424657534,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 161.03,
+      "end": 161.286,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7534246575342466,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 161.286,
+      "end": 161.402,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7602739726027398,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 52,
+      "start": 161.402,
+      "end": 161.541,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7671232876712328,
+      "tension": 1.5,
+      "melody_score": 0.7200000000000001
+    },
+    {
+      "pitch": 45,
+      "start": 161.588,
+      "end": 161.681,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.773972602739726,
+      "tension": 2.5,
+      "melody_score": 0.23272727272727275
+    },
+    {
+      "pitch": 38,
+      "start": 161.681,
+      "end": 161.773,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7808219178082192,
+      "tension": 3.5,
+      "melody_score": 0.18272727272727274
+    },
+    {
+      "pitch": 54,
+      "start": 161.843,
+      "end": 162.168,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7876712328767124,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 42,
+      "start": 162.168,
+      "end": 162.307,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.7945205479452054,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 162.307,
+      "end": 162.447,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8013698630136986,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 162.493,
+      "end": 162.609,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8082191780821918,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 54,
+      "start": 162.679,
+      "end": 162.795,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.815068493150685,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 52,
+      "start": 162.795,
+      "end": 162.888,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.821917808219178,
+      "tension": 1.5,
+      "melody_score": 0.7200000000000001
+    },
+    {
+      "pitch": 54,
+      "start": 162.888,
+      "end": 163.097,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8287671232876712,
+      "tension": 2.25,
+      "melody_score": 0.6604545454545455
+    },
+    {
+      "pitch": 45,
+      "start": 163.445,
+      "end": 163.538,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8356164383561644,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 37,
+      "start": 163.538,
+      "end": 163.794,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8424657534246576,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 39,
+      "start": 163.794,
+      "end": 163.933,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8493150684931506,
+      "tension": 3.0,
+      "melody_score": 0.7354545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 163.933,
+      "end": 164.026,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8561643835616438,
+      "tension": 2.25,
+      "melody_score": 0.615
+    },
+    {
+      "pitch": 40,
+      "start": 164.026,
+      "end": 164.49,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.863013698630137,
+      "tension": 0.75,
+      "melody_score": 0.35863636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 164.629,
+      "end": 164.769,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8698630136986302,
+      "tension": 0.75,
+      "melody_score": 0.7131818181818183
+    },
+    {
+      "pitch": 37,
+      "start": 164.769,
+      "end": 164.862,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8767123287671232,
+      "tension": 1.5,
+      "melody_score": 0.3209090909090909
+    },
+    {
+      "pitch": 40,
+      "start": 164.862,
+      "end": 165.744,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8835616438356164,
+      "tension": 1.75,
+      "melody_score": 0.3386363636363636
+    },
+    {
+      "pitch": 43,
+      "start": 165.744,
+      "end": 165.86,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8904109589041096,
+      "tension": 2.0,
+      "melody_score": 0.5736363636363637
+    },
+    {
+      "pitch": 52,
+      "start": 165.953,
+      "end": 166.046,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.8972602739726028,
+      "tension": 1.75,
+      "melody_score": 0.2363636363636364
+    },
+    {
+      "pitch": 37,
+      "start": 166.116,
+      "end": 166.278,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9041095890410958,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 166.278,
+      "end": 166.394,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.910958904109589,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 166.394,
+      "end": 166.65,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9178082191780822,
+      "tension": 3.0,
+      "melody_score": 0.18136363636363634
+    },
+    {
+      "pitch": 42,
+      "start": 166.65,
+      "end": 166.742,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9246575342465754,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 166.742,
+      "end": 166.905,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9315068493150684,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 39,
+      "start": 166.951,
+      "end": 167.114,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9383561643835616,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 167.137,
+      "end": 167.439,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9452054794520548,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 55,
+      "start": 167.486,
+      "end": 167.834,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.952054794520548,
+      "tension": 3.75,
+      "melody_score": 0.45045454545454544
+    },
+    {
+      "pitch": 37,
+      "start": 168.02,
+      "end": 168.252,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.958904109589041,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 37,
+      "start": 168.414,
+      "end": 168.507,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9657534246575342,
+      "tension": 2.25,
+      "melody_score": 0.7731818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 168.507,
+      "end": 169.041,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9726027397260274,
+      "tension": 1.75,
+      "melody_score": 0.3386363636363636
+    },
+    {
+      "pitch": 53,
+      "start": 169.041,
+      "end": 169.134,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9794520547945206,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 169.181,
+      "end": 169.32,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9863013698630136,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 40,
+      "start": 169.32,
+      "end": 170.597,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 0.9931506849315068,
+      "tension": 1.75,
+      "melody_score": 0.7604545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 170.597,
+      "end": 170.806,
+      "velocity": 127,
+      "phrase_id": 15,
+      "phrase_position": 1.0,
+      "tension": 2.5,
+      "melody_score": 0.3009090909090909
+    },
+    {
+      "pitch": 38,
+      "start": 171.433,
+      "end": 171.665,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.0,
+      "tension": 3.5,
+      "melody_score": 0.84
+    },
+    {
+      "pitch": 63,
+      "start": 171.712,
+      "end": 171.851,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.06666666666666667,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 63,
+      "start": 171.874,
+      "end": 171.967,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.13333333333333333,
+      "tension": 2.25,
+      "melody_score": 0.7731818181818182
+    },
+    {
+      "pitch": 64,
+      "start": 171.99,
+      "end": 172.083,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.2,
+      "tension": 1.75,
+      "melody_score": 0.875
+    },
+    {
+      "pitch": 53,
+      "start": 172.13,
+      "end": 172.269,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.26666666666666666,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 63,
+      "start": 172.269,
+      "end": 172.501,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.3333333333333333,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 37,
+      "start": 172.571,
+      "end": 175.032,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.4,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 44,
+      "start": 175.032,
+      "end": 175.636,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.4666666666666667,
+      "tension": 2.5,
+      "melody_score": 0.32272727272727275
+    },
+    {
+      "pitch": 51,
+      "start": 175.868,
+      "end": 175.961,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.5333333333333333,
+      "tension": 2.75,
+      "melody_score": 0.19772727272727272
+    },
+    {
+      "pitch": 51,
+      "start": 176.03,
+      "end": 176.193,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.6,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 51,
+      "start": 176.216,
+      "end": 176.936,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.6666666666666666,
+      "tension": 2.25,
+      "melody_score": 0.6831818181818182
+    },
+    {
+      "pitch": 64,
+      "start": 176.936,
+      "end": 177.168,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.7333333333333333,
+      "tension": 1.5,
+      "melody_score": 0.2413636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 177.284,
+      "end": 177.842,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.8,
+      "tension": 1.5,
+      "melody_score": 0.33136363636363636
+    },
+    {
+      "pitch": 52,
+      "start": 177.842,
+      "end": 178.213,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.8666666666666667,
+      "tension": 1.5,
+      "melody_score": 0.34272727272727277
+    },
+    {
+      "pitch": 45,
+      "start": 178.213,
+      "end": 178.469,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 0.9333333333333333,
+      "tension": 2.25,
+      "melody_score": 0.32772727272727276
+    },
+    {
+      "pitch": 57,
+      "start": 178.538,
+      "end": 178.654,
+      "velocity": 127,
+      "phrase_id": 16,
+      "phrase_position": 1.0,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 179.072,
+      "end": 179.258,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.0,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 179.328,
+      "end": 181.255,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.02040816326530612,
+      "tension": 1.75,
+      "melody_score": 0.24045454545454548
+    },
+    {
+      "pitch": 62,
+      "start": 181.325,
+      "end": 181.487,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.04081632653061224,
+      "tension": 2.0,
+      "melody_score": 0.23136363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 181.603,
+      "end": 181.696,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.061224489795918366,
+      "tension": 2.0,
+      "melody_score": 0.3213636363636364
+    },
+    {
+      "pitch": 36,
+      "start": 181.789,
+      "end": 182.207,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.08163265306122448,
+      "tension": 2.75,
+      "melody_score": 0.24318181818181817
+    },
+    {
+      "pitch": 54,
+      "start": 182.207,
+      "end": 182.718,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.10204081632653061,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 54,
+      "start": 182.741,
+      "end": 182.834,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.12244897959183673,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 182.834,
+      "end": 182.927,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.14285714285714285,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 75,
+      "start": 183.02,
+      "end": 183.113,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.16326530612244897,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 51,
+      "start": 183.113,
+      "end": 183.275,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.1836734693877551,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 64,
+      "start": 183.275,
+      "end": 183.368,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.20408163265306123,
+      "tension": 1.5,
+      "melody_score": 0.33136363636363636
+    },
+    {
+      "pitch": 63,
+      "start": 183.507,
+      "end": 183.6,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.22448979591836735,
+      "tension": 1.5,
+      "melody_score": 0.9018181818181819
+    },
+    {
+      "pitch": 52,
+      "start": 183.74,
+      "end": 184.018,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.24489795918367346,
+      "tension": 1.75,
+      "melody_score": 0.2363636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 184.018,
+      "end": 186.247,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.2653061224489796,
+      "tension": 2.5,
+      "melody_score": 0.1913636363636364
+    },
+    {
+      "pitch": 44,
+      "start": 186.247,
+      "end": 186.526,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.2857142857142857,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 45,
+      "start": 186.619,
+      "end": 187.153,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.30612244897959184,
+      "tension": 2.75,
+      "melody_score": 0.675
+    },
+    {
+      "pitch": 45,
+      "start": 187.199,
+      "end": 187.339,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.32653061224489793,
+      "tension": 2.75,
+      "melody_score": 0.6731818181818182
+    },
+    {
+      "pitch": 56,
+      "start": 187.524,
+      "end": 187.64,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.3469387755102041,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 56,
+      "start": 187.733,
+      "end": 187.826,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.3673469387755102,
+      "tension": 2.25,
+      "melody_score": 0.7731818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 187.826,
+      "end": 187.989,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.3877551020408163,
+      "tension": 3.0,
+      "melody_score": 0.6
+    },
+    {
+      "pitch": 53,
+      "start": 188.175,
+      "end": 188.291,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.40816326530612246,
+      "tension": 3.25,
+      "melody_score": 0.8668181818181818
+    },
+    {
+      "pitch": 44,
+      "start": 188.5,
+      "end": 189.08,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.42857142857142855,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 57,
+      "start": 189.08,
+      "end": 189.219,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.4489795918367347,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 45,
+      "start": 189.219,
+      "end": 189.382,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.46938775510204084,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 57,
+      "start": 189.382,
+      "end": 189.544,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.4897959183673469,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 189.544,
+      "end": 189.661,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.5102040816326531,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 189.846,
+      "end": 190.009,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.5306122448979592,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 190.125,
+      "end": 190.427,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.5510204081632653,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 57,
+      "start": 190.427,
+      "end": 190.566,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.5714285714285714,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 40,
+      "start": 190.705,
+      "end": 191.959,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.5918367346938775,
+      "tension": 1.5,
+      "melody_score": 0.33136363636363636
+    },
+    {
+      "pitch": 57,
+      "start": 191.959,
+      "end": 192.099,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.6122448979591837,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 41,
+      "start": 192.099,
+      "end": 192.586,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.6326530612244898,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 41,
+      "start": 192.749,
+      "end": 192.981,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.6530612244897959,
+      "tension": 4.0,
+      "melody_score": 0.7381818181818182
+    },
+    {
+      "pitch": 36,
+      "start": 192.981,
+      "end": 193.701,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.673469387755102,
+      "tension": 3.75,
+      "melody_score": 0.23045454545454547
+    },
+    {
+      "pitch": 54,
+      "start": 193.701,
+      "end": 194.258,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.6938775510204082,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 59,
+      "start": 194.258,
+      "end": 194.467,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.7142857142857143,
+      "tension": 2.0,
+      "melody_score": 0.23545454545454547
+    },
+    {
+      "pitch": 54,
+      "start": 194.467,
+      "end": 194.653,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.7346938775510204,
+      "tension": 2.25,
+      "melody_score": 0.2604545454545455
+    },
+    {
+      "pitch": 44,
+      "start": 194.653,
+      "end": 194.978,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.7551020408163265,
+      "tension": 2.5,
+      "melody_score": 0.22136363636363637
+    },
+    {
+      "pitch": 42,
+      "start": 194.978,
+      "end": 195.257,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.7755102040816326,
+      "tension": 2.75,
+      "melody_score": 0.42500000000000004
+    },
+    {
+      "pitch": 37,
+      "start": 195.303,
+      "end": 195.419,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.7959183673469388,
+      "tension": 2.25,
+      "melody_score": 0.2604545454545455
+    },
+    {
+      "pitch": 40,
+      "start": 195.419,
+      "end": 195.86,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.8163265306122449,
+      "tension": 0.75,
+      "melody_score": 0.35863636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 196.046,
+      "end": 196.139,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.8367346938775511,
+      "tension": 0.75,
+      "melody_score": 0.7131818181818183
+    },
+    {
+      "pitch": 37,
+      "start": 196.139,
+      "end": 196.232,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.8571428571428571,
+      "tension": 1.5,
+      "melody_score": 0.3209090909090909
+    },
+    {
+      "pitch": 40,
+      "start": 196.232,
+      "end": 197.184,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.8775510204081632,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 42,
+      "start": 197.207,
+      "end": 197.346,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.8979591836734694,
+      "tension": 1.5,
+      "melody_score": 0.7654545454545455
+    },
+    {
+      "pitch": 40,
+      "start": 197.346,
+      "end": 197.486,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.9183673469387755,
+      "tension": 1.5,
+      "melody_score": 0.63
+    },
+    {
+      "pitch": 37,
+      "start": 197.555,
+      "end": 197.695,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.9387755102040817,
+      "tension": 2.25,
+      "melody_score": 0.5459090909090909
+    },
+    {
+      "pitch": 45,
+      "start": 197.695,
+      "end": 198.02,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.9591836734693877,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 39,
+      "start": 198.298,
+      "end": 198.507,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 0.9795918367346939,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 198.507,
+      "end": 199.041,
+      "velocity": 127,
+      "phrase_id": 17,
+      "phrase_position": 1.0,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 37,
+      "start": 199.808,
+      "end": 199.947,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.0,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 44,
+      "start": 199.947,
+      "end": 200.202,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.006802721088435374,
+      "tension": 2.5,
+      "melody_score": 0.32272727272727275
+    },
+    {
+      "pitch": 39,
+      "start": 200.551,
+      "end": 200.644,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.013605442176870748,
+      "tension": 2.75,
+      "melody_score": 0.34045454545454545
+    },
+    {
+      "pitch": 37,
+      "start": 200.644,
+      "end": 200.783,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.02040816326530612,
+      "tension": 3.0,
+      "melody_score": 0.6900000000000001
+    },
+    {
+      "pitch": 45,
+      "start": 200.783,
+      "end": 201.015,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.027210884353741496,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 39,
+      "start": 201.108,
+      "end": 201.433,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.034013605442176874,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 45,
+      "start": 201.433,
+      "end": 201.712,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.04081632653061224,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 36,
+      "start": 201.712,
+      "end": 201.967,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.047619047619047616,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 201.967,
+      "end": 202.733,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.05442176870748299,
+      "tension": 4.0,
+      "melody_score": 0.7154545454545455
+    },
+    {
+      "pitch": 36,
+      "start": 202.803,
+      "end": 202.919,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.061224489795918366,
+      "tension": 4.0,
+      "melody_score": 0.58
+    },
+    {
+      "pitch": 38,
+      "start": 202.919,
+      "end": 203.012,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.06802721088435375,
+      "tension": 4.0,
+      "melody_score": 0.6254545454545455
+    },
+    {
+      "pitch": 36,
+      "start": 203.012,
+      "end": 203.314,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.07482993197278912,
+      "tension": 4.0,
+      "melody_score": 0.58
+    },
+    {
+      "pitch": 38,
+      "start": 203.314,
+      "end": 203.407,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.08163265306122448,
+      "tension": 4.0,
+      "melody_score": 0.6254545454545455
+    },
+    {
+      "pitch": 36,
+      "start": 203.407,
+      "end": 203.918,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.08843537414965986,
+      "tension": 3.75,
+      "melody_score": 0.585
+    },
+    {
+      "pitch": 45,
+      "start": 203.918,
+      "end": 204.196,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.09523809523809523,
+      "tension": 2.5,
+      "melody_score": 0.22136363636363637
+    },
+    {
+      "pitch": 40,
+      "start": 204.196,
+      "end": 204.336,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.10204081632653061,
+      "tension": 0.75,
+      "melody_score": 0.3804545454545455
+    },
+    {
+      "pitch": 40,
+      "start": 204.382,
+      "end": 204.986,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.10884353741496598,
+      "tension": 0.75,
+      "melody_score": 0.7131818181818183
+    },
+    {
+      "pitch": 39,
+      "start": 205.032,
+      "end": 205.172,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.11564625850340136,
+      "tension": 1.5,
+      "melody_score": 0.8118181818181819
+    },
+    {
+      "pitch": 40,
+      "start": 205.241,
+      "end": 206.216,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.12244897959183673,
+      "tension": 1.5,
+      "melody_score": 0.88
+    },
+    {
+      "pitch": 37,
+      "start": 206.216,
+      "end": 206.379,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.1292517006802721,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 45,
+      "start": 206.449,
+      "end": 206.541,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.1360544217687075,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 38,
+      "start": 206.541,
+      "end": 206.634,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.14285714285714285,
+      "tension": 3.5,
+      "melody_score": 0.30272727272727273
+    },
+    {
+      "pitch": 45,
+      "start": 206.634,
+      "end": 206.89,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.14965986394557823,
+      "tension": 2.75,
+      "melody_score": 0.31772727272727275
+    },
+    {
+      "pitch": 71,
+      "start": 206.89,
+      "end": 206.983,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.1564625850340136,
+      "tension": 2.25,
+      "melody_score": 0.1963636363636364
+    },
+    {
+      "pitch": 43,
+      "start": 207.006,
+      "end": 207.122,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.16326530612244897,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 37,
+      "start": 207.285,
+      "end": 207.54,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.17006802721088435,
+      "tension": 3.5,
+      "melody_score": 0.17136363636363638
+    },
+    {
+      "pitch": 53,
+      "start": 207.772,
+      "end": 207.865,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.17687074829931973,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 207.935,
+      "end": 208.028,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.1836734693877551,
+      "tension": 3.75,
+      "melody_score": 0.7431818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 208.144,
+      "end": 208.701,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.19047619047619047,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 42,
+      "start": 208.701,
+      "end": 208.817,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.19727891156462585,
+      "tension": 3.0,
+      "melody_score": 0.26090909090909087
+    },
+    {
+      "pitch": 42,
+      "start": 208.863,
+      "end": 209.607,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.20408163265306123,
+      "tension": 3.25,
+      "melody_score": 0.6631818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 209.607,
+      "end": 209.723,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.2108843537414966,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 209.723,
+      "end": 210.651,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.21768707482993196,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 210.698,
+      "end": 211.093,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.22448979591836735,
+      "tension": 2.75,
+      "melody_score": 0.2731818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 211.093,
+      "end": 212.881,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.23129251700680273,
+      "tension": 1.25,
+      "melody_score": 0.6804545454545455
+    },
+    {
+      "pitch": 47,
+      "start": 212.881,
+      "end": 212.973,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.23809523809523808,
+      "tension": 1.5,
+      "melody_score": 0.25272727272727274
+    },
+    {
+      "pitch": 36,
+      "start": 212.973,
+      "end": 213.159,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.24489795918367346,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 39,
+      "start": 213.159,
+      "end": 213.577,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.25170068027210885,
+      "tension": 3.5,
+      "melody_score": 0.5436363636363637
+    },
+    {
+      "pitch": 41,
+      "start": 213.577,
+      "end": 213.995,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.2585034013605442,
+      "tension": 3.5,
+      "melody_score": 0.7254545454545455
+    },
+    {
+      "pitch": 39,
+      "start": 213.995,
+      "end": 215.203,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.2653061224489796,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 37,
+      "start": 215.203,
+      "end": 215.365,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.272108843537415,
+      "tension": 3.0,
+      "melody_score": 0.6900000000000001
+    },
+    {
+      "pitch": 45,
+      "start": 215.412,
+      "end": 215.528,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.2789115646258503,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 45,
+      "start": 215.597,
+      "end": 215.76,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.2857142857142857,
+      "tension": 2.5,
+      "melody_score": 0.7681818181818182
+    },
+    {
+      "pitch": 71,
+      "start": 215.76,
+      "end": 215.853,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.2925170068027211,
+      "tension": 2.0,
+      "melody_score": 0.23136363636363638
+    },
+    {
+      "pitch": 45,
+      "start": 215.853,
+      "end": 216.294,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.29931972789115646,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 38,
+      "start": 216.294,
+      "end": 216.526,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.30612244897959184,
+      "tension": 3.5,
+      "melody_score": 0.18272727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 216.642,
+      "end": 216.921,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3129251700680272,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 217.06,
+      "end": 217.385,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3197278911564626,
+      "tension": 3.25,
+      "melody_score": 0.7531818181818182
+    },
+    {
+      "pitch": 41,
+      "start": 217.617,
+      "end": 217.78,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.32653061224489793,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 217.826,
+      "end": 218.546,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3333333333333333,
+      "tension": 3.5,
+      "melody_score": 0.84
+    },
+    {
+      "pitch": 38,
+      "start": 218.546,
+      "end": 218.709,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3401360544217687,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 218.778,
+      "end": 218.941,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3469387755102041,
+      "tension": 3.25,
+      "melody_score": 0.20636363636363636
+    },
+    {
+      "pitch": 42,
+      "start": 218.941,
+      "end": 219.127,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.35374149659863946,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 54,
+      "start": 219.127,
+      "end": 219.289,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.36054421768707484,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 42,
+      "start": 219.289,
+      "end": 219.661,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3673469387755102,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 219.661,
+      "end": 219.823,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3741496598639456,
+      "tension": 3.75,
+      "melody_score": 0.22318181818181818
+    },
+    {
+      "pitch": 38,
+      "start": 219.893,
+      "end": 220.032,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.38095238095238093,
+      "tension": 3.0,
+      "melody_score": 0.6681818181818182
+    },
+    {
+      "pitch": 40,
+      "start": 220.032,
+      "end": 220.45,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3877551020408163,
+      "tension": 1.25,
+      "melody_score": 0.6804545454545455
+    },
+    {
+      "pitch": 71,
+      "start": 220.566,
+      "end": 220.729,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.3945578231292517,
+      "tension": 1.25,
+      "melody_score": 0.2463636363636364
+    },
+    {
+      "pitch": 39,
+      "start": 220.729,
+      "end": 220.845,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4013605442176871,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 37,
+      "start": 220.845,
+      "end": 220.938,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.40816326530612246,
+      "tension": 2.25,
+      "melody_score": 0.43500000000000005
+    },
+    {
+      "pitch": 40,
+      "start": 220.938,
+      "end": 222.215,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.41496598639455784,
+      "tension": 1.5,
+      "melody_score": 0.34363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 222.215,
+      "end": 222.354,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4217687074829932,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 42,
+      "start": 222.378,
+      "end": 223.028,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.42857142857142855,
+      "tension": 3.25,
+      "melody_score": 0.24045454545454548
+    },
+    {
+      "pitch": 38,
+      "start": 223.028,
+      "end": 223.213,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.43537414965986393,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 223.213,
+      "end": 223.585,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4421768707482993,
+      "tension": 3.25,
+      "melody_score": 0.2631818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 223.631,
+      "end": 223.724,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4489795918367347,
+      "tension": 3.0,
+      "melody_score": 0.5536363636363636
+    },
+    {
+      "pitch": 49,
+      "start": 223.724,
+      "end": 223.817,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4557823129251701,
+      "tension": 3.0,
+      "melody_score": 0.5081818181818182
+    },
+    {
+      "pitch": 42,
+      "start": 223.817,
+      "end": 224.165,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.46258503401360546,
+      "tension": 3.25,
+      "melody_score": 0.21772727272727274
+    },
+    {
+      "pitch": 38,
+      "start": 224.165,
+      "end": 224.305,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.46938775510204084,
+      "tension": 3.5,
+      "melody_score": 0.22818181818181818
+    },
+    {
+      "pitch": 39,
+      "start": 224.398,
+      "end": 224.491,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.47619047619047616,
+      "tension": 3.25,
+      "melody_score": 0.845
+    },
+    {
+      "pitch": 37,
+      "start": 224.491,
+      "end": 224.607,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.48299319727891155,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 43,
+      "start": 224.607,
+      "end": 225.094,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4897959183673469,
+      "tension": 2.75,
+      "melody_score": 0.21636363636363637
+    },
+    {
+      "pitch": 40,
+      "start": 225.187,
+      "end": 225.28,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.4965986394557823,
+      "tension": 1.75,
+      "melody_score": 0.5559090909090909
+    },
+    {
+      "pitch": 37,
+      "start": 225.28,
+      "end": 225.512,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5034013605442177,
+      "tension": 2.0,
+      "melody_score": 0.5509090909090909
+    },
+    {
+      "pitch": 44,
+      "start": 225.791,
+      "end": 225.977,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5102040816326531,
+      "tension": 2.25,
+      "melody_score": 0.23772727272727276
+    },
+    {
+      "pitch": 44,
+      "start": 226.046,
+      "end": 226.418,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5170068027210885,
+      "tension": 2.25,
+      "melody_score": 0.7731818181818182
+    },
+    {
+      "pitch": 45,
+      "start": 226.604,
+      "end": 226.72,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5238095238095238,
+      "tension": 3.0,
+      "melody_score": 0.85
+    },
+    {
+      "pitch": 38,
+      "start": 226.72,
+      "end": 226.836,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5306122448979592,
+      "tension": 3.5,
+      "melody_score": 0.21272727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 226.836,
+      "end": 227.161,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5374149659863946,
+      "tension": 3.5,
+      "melody_score": 0.30272727272727273
+    },
+    {
+      "pitch": 53,
+      "start": 227.277,
+      "end": 227.486,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.54421768707483,
+      "tension": 3.75,
+      "melody_score": 0.16636363636363638
+    },
+    {
+      "pitch": 38,
+      "start": 227.486,
+      "end": 227.718,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5510204081632653,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 52,
+      "start": 227.718,
+      "end": 228.066,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5578231292517006,
+      "tension": 2.0,
+      "melody_score": 0.3213636363636364
+    },
+    {
+      "pitch": 41,
+      "start": 228.066,
+      "end": 228.159,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.564625850340136,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 66,
+      "start": 228.159,
+      "end": 228.275,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5714285714285714,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 228.322,
+      "end": 228.484,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5782312925170068,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 66,
+      "start": 228.484,
+      "end": 228.577,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5850340136054422,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 228.624,
+      "end": 229.042,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5918367346938775,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 40,
+      "start": 229.042,
+      "end": 229.738,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.5986394557823129,
+      "tension": 2.0,
+      "melody_score": 0.7554545454545455
+    },
+    {
+      "pitch": 38,
+      "start": 229.738,
+      "end": 229.924,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6054421768707483,
+      "tension": 2.0,
+      "melody_score": 0.62
+    },
+    {
+      "pitch": 40,
+      "start": 229.924,
+      "end": 230.365,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6122448979591837,
+      "tension": 1.75,
+      "melody_score": 0.6704545454545455
+    },
+    {
+      "pitch": 57,
+      "start": 230.365,
+      "end": 230.667,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6190476190476191,
+      "tension": 1.5,
+      "melody_score": 0.2413636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 230.667,
+      "end": 230.853,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6258503401360545,
+      "tension": 1.5,
+      "melody_score": 0.33136363636363636
+    },
+    {
+      "pitch": 42,
+      "start": 230.853,
+      "end": 231.131,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6326530612244898,
+      "tension": 2.25,
+      "melody_score": 0.7504545454545455
+    },
+    {
+      "pitch": 39,
+      "start": 231.131,
+      "end": 231.224,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6394557823129252,
+      "tension": 3.0,
+      "melody_score": 0.2909090909090909
+    },
+    {
+      "pitch": 37,
+      "start": 231.224,
+      "end": 231.34,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6462585034013606,
+      "tension": 2.75,
+      "melody_score": 0.6950000000000001
+    },
+    {
+      "pitch": 44,
+      "start": 231.34,
+      "end": 231.457,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6530612244897959,
+      "tension": 2.75,
+      "melody_score": 0.22772727272727272
+    },
+    {
+      "pitch": 62,
+      "start": 231.48,
+      "end": 231.573,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6598639455782312,
+      "tension": 3.25,
+      "melody_score": 0.1763636363636364
+    },
+    {
+      "pitch": 54,
+      "start": 231.573,
+      "end": 231.712,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6666666666666666,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 73,
+      "start": 231.828,
+      "end": 231.921,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.673469387755102,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 37,
+      "start": 232.083,
+      "end": 232.176,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6802721088435374,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 51,
+      "start": 232.246,
+      "end": 232.385,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6870748299319728,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 232.385,
+      "end": 232.687,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.6938775510204082,
+      "tension": 3.0,
+      "melody_score": 0.46545454545454545
+    },
+    {
+      "pitch": 71,
+      "start": 232.85,
+      "end": 232.943,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7006802721088435,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 37,
+      "start": 233.082,
+      "end": 233.291,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7074829931972789,
+      "tension": 2.5,
+      "melody_score": 0.3113636363636364
+    },
+    {
+      "pitch": 39,
+      "start": 233.453,
+      "end": 233.57,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7142857142857143,
+      "tension": 3.0,
+      "melody_score": 0.7354545454545455
+    },
+    {
+      "pitch": 37,
+      "start": 233.57,
+      "end": 234.011,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7210884353741497,
+      "tension": 3.25,
+      "melody_score": 0.595
+    },
+    {
+      "pitch": 53,
+      "start": 234.011,
+      "end": 234.196,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7278911564625851,
+      "tension": 3.75,
+      "melody_score": 0.19636363636363635
+    },
+    {
+      "pitch": 38,
+      "start": 234.196,
+      "end": 235.357,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7346938775510204,
+      "tension": 3.75,
+      "melody_score": 0.2863636363636364
+    },
+    {
+      "pitch": 75,
+      "start": 235.404,
+      "end": 235.566,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7414965986394558,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 44,
+      "start": 235.566,
+      "end": 235.706,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7482993197278912,
+      "tension": 2.75,
+      "melody_score": 0.30636363636363634
+    },
+    {
+      "pitch": 38,
+      "start": 235.706,
+      "end": 235.799,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7551020408163265,
+      "tension": 3.25,
+      "melody_score": 0.1763636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 235.799,
+      "end": 236.124,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7619047619047619,
+      "tension": 3.5,
+      "melody_score": 0.30272727272727273
+    },
+    {
+      "pitch": 53,
+      "start": 236.124,
+      "end": 236.426,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7687074829931972,
+      "tension": 3.5,
+      "melody_score": 0.17136363636363638
+    },
+    {
+      "pitch": 39,
+      "start": 236.449,
+      "end": 236.635,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7755102040816326,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 45,
+      "start": 236.635,
+      "end": 236.751,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.782312925170068,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 53,
+      "start": 236.867,
+      "end": 237.053,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7891156462585034,
+      "tension": 3.5,
+      "melody_score": 0.17136363636363638
+    },
+    {
+      "pitch": 45,
+      "start": 237.053,
+      "end": 237.145,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.7959183673469388,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 75,
+      "start": 237.145,
+      "end": 237.331,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8027210884353742,
+      "tension": 3.0,
+      "melody_score": 0.30136363636363633
+    },
+    {
+      "pitch": 78,
+      "start": 237.378,
+      "end": 237.47,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8095238095238095,
+      "tension": 3.0,
+      "melody_score": 0.28363636363636363
+    },
+    {
+      "pitch": 37,
+      "start": 237.587,
+      "end": 237.842,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8163265306122449,
+      "tension": 3.0,
+      "melody_score": 0.21136363636363636
+    },
+    {
+      "pitch": 39,
+      "start": 237.842,
+      "end": 237.981,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8231292517006803,
+      "tension": 2.25,
+      "melody_score": 0.7504545454545455
+    },
+    {
+      "pitch": 40,
+      "start": 238.051,
+      "end": 238.469,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8299319727891157,
+      "tension": 1.5,
+      "melody_score": 0.9700000000000001
+    },
+    {
+      "pitch": 54,
+      "start": 238.562,
+      "end": 238.655,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8367346938775511,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 39,
+      "start": 238.678,
+      "end": 238.794,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8435374149659864,
+      "tension": 2.25,
+      "melody_score": 0.3163636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 238.864,
+      "end": 240.048,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8503401360544217,
+      "tension": 1.5,
+      "melody_score": 0.9700000000000001
+    },
+    {
+      "pitch": 39,
+      "start": 240.094,
+      "end": 240.257,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8571428571428571,
+      "tension": 2.25,
+      "melody_score": 0.7968181818181819
+    },
+    {
+      "pitch": 42,
+      "start": 240.257,
+      "end": 240.698,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8639455782312925,
+      "tension": 3.0,
+      "melody_score": 0.3136363636363636
+    },
+    {
+      "pitch": 49,
+      "start": 240.837,
+      "end": 240.93,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8707482993197279,
+      "tension": 3.0,
+      "melody_score": 0.22272727272727272
+    },
+    {
+      "pitch": 42,
+      "start": 240.93,
+      "end": 241.023,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8775510204081632,
+      "tension": 3.25,
+      "melody_score": 0.30772727272727274
+    },
+    {
+      "pitch": 38,
+      "start": 241.023,
+      "end": 241.116,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8843537414965986,
+      "tension": 3.5,
+      "melody_score": 0.22818181818181818
+    },
+    {
+      "pitch": 42,
+      "start": 241.116,
+      "end": 242.091,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.891156462585034,
+      "tension": 3.5,
+      "melody_score": 0.2581818181818182
+    },
+    {
+      "pitch": 38,
+      "start": 242.091,
+      "end": 242.347,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.8979591836734694,
+      "tension": 3.75,
+      "melody_score": 0.2531818181818182
+    },
+    {
+      "pitch": 36,
+      "start": 242.347,
+      "end": 242.463,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9047619047619048,
+      "tension": 3.25,
+      "melody_score": 0.685
+    },
+    {
+      "pitch": 47,
+      "start": 242.602,
+      "end": 242.695,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9115646258503401,
+      "tension": 2.5,
+      "melody_score": 0.22136363636363637
+    },
+    {
+      "pitch": 36,
+      "start": 242.695,
+      "end": 243.113,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9183673469387755,
+      "tension": 3.25,
+      "melody_score": 0.2963636363636364
+    },
+    {
+      "pitch": 38,
+      "start": 243.183,
+      "end": 243.368,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9251700680272109,
+      "tension": 3.75,
+      "melody_score": 0.7204545454545455
+    },
+    {
+      "pitch": 45,
+      "start": 243.368,
+      "end": 243.926,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9319727891156463,
+      "tension": 3.25,
+      "melody_score": 0.21772727272727274
+    },
+    {
+      "pitch": 45,
+      "start": 243.995,
+      "end": 244.251,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9387755102040817,
+      "tension": 3.0,
+      "melody_score": 0.7581818181818182
+    },
+    {
+      "pitch": 54,
+      "start": 244.297,
+      "end": 244.413,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9455782312925171,
+      "tension": 2.25,
+      "melody_score": 0.22636363636363638
+    },
+    {
+      "pitch": 52,
+      "start": 244.413,
+      "end": 244.576,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9523809523809523,
+      "tension": 1.5,
+      "melody_score": 0.7200000000000001
+    },
+    {
+      "pitch": 51,
+      "start": 244.645,
+      "end": 244.808,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9591836734693877,
+      "tension": 2.5,
+      "melody_score": 0.8818181818181818
+    },
+    {
+      "pitch": 53,
+      "start": 244.808,
+      "end": 245.458,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9659863945578231,
+      "tension": 3.75,
+      "melody_score": 0.6304545454545455
+    },
+    {
+      "pitch": 55,
+      "start": 245.458,
+      "end": 246.317,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9727891156462585,
+      "tension": 4.0,
+      "melody_score": 0.7154545454545455
+    },
+    {
+      "pitch": 53,
+      "start": 246.317,
+      "end": 246.619,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9795918367346939,
+      "tension": 3.75,
+      "melody_score": 0.585
+    },
+    {
+      "pitch": 57,
+      "start": 246.642,
+      "end": 246.735,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9863945578231292,
+      "tension": 3.0,
+      "melody_score": 0.2681818181818182
+    },
+    {
+      "pitch": 56,
+      "start": 247.037,
+      "end": 247.176,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 0.9931972789115646,
+      "tension": 2.5,
+      "melody_score": 0.7918181818181819
+    },
+    {
+      "pitch": 54,
+      "start": 247.176,
+      "end": 247.269,
+      "velocity": 127,
+      "phrase_id": 18,
+      "phrase_position": 1.0,
+      "tension": 2.25,
+      "melody_score": 0.7050000000000001
+    },
+    {
+      "pitch": 59,
+      "start": 247.78,
+      "end": 247.896,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.0,
+      "tension": 1.75,
+      "melody_score": 0.27045454545454545
+    },
+    {
+      "pitch": 56,
+      "start": 248.152,
+      "end": 248.314,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.125,
+      "tension": 2.25,
+      "melody_score": 0.3059090909090909
+    },
+    {
+      "pitch": 58,
+      "start": 248.454,
+      "end": 248.546,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.25,
+      "tension": 3.0,
+      "melody_score": 0.6454545454545455
+    },
+    {
+      "pitch": 56,
+      "start": 248.662,
+      "end": 248.848,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.375,
+      "tension": 2.75,
+      "melody_score": 0.605
+    },
+    {
+      "pitch": 54,
+      "start": 248.848,
+      "end": 248.988,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.5,
+      "tension": 2.0,
+      "melody_score": 0.7100000000000001
+    },
+    {
+      "pitch": 52,
+      "start": 248.988,
+      "end": 249.313,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.625,
+      "tension": 1.75,
+      "melody_score": 0.7150000000000001
+    },
+    {
+      "pitch": 53,
+      "start": 249.429,
+      "end": 250.172,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.75,
+      "tension": 3.0,
+      "melody_score": 0.85
+    },
+    {
+      "pitch": 53,
+      "start": 250.218,
+      "end": 250.567,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 0.875,
+      "tension": 4.0,
+      "melody_score": 0.6481818181818182
+    },
+    {
+      "pitch": 55,
+      "start": 250.567,
+      "end": 250.729,
+      "velocity": 127,
+      "phrase_id": 19,
+      "phrase_position": 1.0,
+      "tension": 3.75,
+      "melody_score": 0.6304545454545455
+    },
+    {
+      "pitch": 54,
+      "start": 251.333,
+      "end": 251.472,
+      "velocity": 127,
+      "phrase_id": 20,
+      "phrase_position": 0.0,
+      "tension": 2.5,
+      "melody_score": 0.7918181818181819
+    },
+    {
+      "pitch": 40,
+      "start": 251.472,
+      "end": 251.704,
+      "velocity": 127,
+      "phrase_id": 20,
+      "phrase_position": 0.25,
+      "tension": 0.75,
+      "melody_score": 0.2563636363636364
+    },
+    {
+      "pitch": 40,
+      "start": 251.728,
+      "end": 252.703,
+      "velocity": 127,
+      "phrase_id": 20,
+      "phrase_position": 0.5,
+      "tension": 0.0,
+      "melody_score": 0.8181818181818181
+    },
+    {
+      "pitch": 52,
+      "start": 252.703,
+      "end": 253.028,
+      "velocity": 127,
+      "phrase_id": 20,
+      "phrase_position": 0.75,
+      "tension": 0.0,
+      "melody_score": 0.27136363636363636
+    },
+    {
+      "pitch": 40,
+      "start": 253.028,
+      "end": 253.237,
+      "velocity": 127,
+      "phrase_id": 20,
+      "phrase_position": 1.0,
+      "tension": 0.0,
+      "melody_score": 0.36136363636363633
+    }
+  ]
+}
