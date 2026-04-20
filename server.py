@@ -18,6 +18,15 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
+# ─── CONSTANTS ───────────────────────────────────────────────────────────────
+
+BASE_DIR = Path(__file__).parent
+UPLOADS_DIR = BASE_DIR / "uploads"
+OUTPUTS_DIR = BASE_DIR / "outputs"
+
+UPLOADS_DIR.mkdir(exist_ok=True)
+OUTPUTS_DIR.mkdir(exist_ok=True)
+
 # ─── APP INIT ────────────────────────────────────────────────────────────────
 
 app = FastAPI(title="Audio-Instruments-ML API", version="3.0")
@@ -239,11 +248,18 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
             import random
             from to_midi import apply_todd_phrasing, note_name_to_midi, INSTRUMENT_PROGRAMS
 
+            # Fix 1: Read beat_duration and handle both JSON formats
             with open(arranged_json_path, "r") as f:
-                notes = _json.load(f)
+                raw = _json.load(f)
+            if isinstance(raw, dict) and "notes" in raw:
+                notes = raw["notes"]
+                beat_duration = float(raw.get("beat_duration", 0.5))
+            else:
+                notes = raw
+                beat_duration = 0.5  # fallback
 
             notes.sort(key=lambda x: x["time"])
-            tempo_val = 120.0
+            tempo_val = 60.0 / beat_duration
             notes = apply_todd_phrasing(notes, tempo_val)
 
             midi = pretty_midi.PrettyMIDI(initial_tempo=tempo_val)
@@ -251,6 +267,7 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
             instr_track = pretty_midi.Instrument(program=program, name=instrument)
 
             skipped = 0
+            last_note_per_pitch = {} # Fix 4: Guard against same-pitch overlaps
             for entry in notes:
                 midi_num = entry.get("midi")
                 if midi_num is None:
@@ -262,8 +279,8 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
                 dur      = float(entry["duration"])
                 role     = entry.get("role", "harmony")
 
-                rit_mult = entry.get("_rit_mult", 1.0)
-                dur *= rit_mult
+                # Fix 2: Apply onset delay instead of duration multiplier
+                start += entry.get('_rit_onset_delay', 0.0)
                 if entry.get("_pre_climax_nudge", False):
                     start -= 0.006
                 offset_ms = 0
@@ -275,20 +292,29 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
                     offset_ms = 25 if role == 'melody' else 10
                 start += offset_ms / 1000.0
 
-                decay = {"melody": 0.6, "bass": 0.4}.get(role, 0.3)
+                # Fix 3: Tempo-proportional decay tails
+                if role == 'melody':
+                    decay = min(0.5, beat_duration * 0.45)
+                elif role == 'bass':
+                    decay = min(0.35, beat_duration * 0.35)
+                else:
+                    decay = min(0.25, beat_duration * 0.25)
+
                 if entry.get("_phrase_end_decay", False):
-                    decay += 0.3
+                    decay += min(0.25, beat_duration * 0.5)
                 end = start + dur + decay
 
+                # Fix 5: Standardization of velocity
                 raw_vel = float(entry.get("velocity", 80))
-                if raw_vel <= 1.0: raw_vel *= 127
+                raw_vel = max(1.0, min(127.0, raw_vel))
+
                 norm_v = min(1.0, raw_vel / 127.0)
                 if role == "melody":   base_vel = int(90 + norm_v * 20)
                 elif role == "bass":   base_vel = int(60 + norm_v * 20)
                 else:                  base_vel = int(50 + norm_v * 20)
                 vel = base_vel + random.randint(-10, 10)
 
-                sec_per_beat = 60.0 / tempo_val
+                sec_per_beat = beat_duration
                 beat_idx = round(start / sec_per_beat)
                 is_on_grid = abs(start - beat_idx * sec_per_beat) < 0.05
                 if is_on_grid:
@@ -304,6 +330,13 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
                     end = start + 0.1
 
                 note_obj = pretty_midi.Note(velocity=vel, pitch=midi_num, start=max(0, start), end=end)
+                
+                # Fix 4: Same-pitch overlap guard
+                if midi_num in last_note_per_pitch:
+                    prev = last_note_per_pitch[midi_num]
+                    if prev.end > start:
+                        prev.end = max(prev.start + 0.01, start - 0.005)
+                last_note_per_pitch[midi_num] = note_obj
                 instr_track.notes.append(note_obj)
 
             midi.instruments.append(instr_track)
@@ -312,7 +345,7 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
 
             update_job(job_id, phase="OUTPUT", progress=95,
                        output_path=midi_out_path)
-            append_log(job_id, "[OUTPUT] MIDI file ready for download.")
+            append_log(job_id, f"[OUTPUT] MIDI file ready: {midi_out_path}")
 
         else:  # sheet
             update_job(job_id, phase="MIDI_GEN", progress=82)
@@ -325,7 +358,12 @@ def run_pipeline(job_id: str, audio_path: str, instrument: str, output_mode: str
             import music21
 
             with open(arranged_json_path, "r") as f:
-                notes_data = _json.load(f)
+                raw_data = _json.load(f)
+            
+            if isinstance(raw_data, dict) and "notes" in raw_data:
+                notes_data = raw_data["notes"]
+            else:
+                notes_data = raw_data
 
             score = stream.Score()
             score.metadata = m21meta.Metadata()
@@ -396,10 +434,15 @@ async def run_endpoint(
     threshold: float  = Form(0.3),
 ):
     job_id  = str(uuid.uuid4())
-    work_dir = tempfile.mkdtemp(prefix=f"aml_{job_id[:8]}_")
+    work_dir = str(OUTPUTS_DIR / f"job_{job_id[:8]}")
+    os.makedirs(work_dir, exist_ok=True)
 
     # Save uploaded file
-    audio_path = os.path.join(work_dir, file.filename or "upload.mp3")
+    file_id = job_id[:8]
+    suffix = Path(file.filename or "upload.mp3").suffix
+    audio_filename = f"{file_id}{suffix}"
+    audio_path = str(UPLOADS_DIR / audio_filename)
+    
     with open(audio_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
 

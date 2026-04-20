@@ -25,8 +25,12 @@ print('ResNet18 weights cached.')"
 # ── Copy source (after deps so cache is reused on code-only changes) ──────────
 COPY . .
 
-# ── Runtime directories (created fresh on every container start) ──────────────
-RUN mkdir -p uploads outputs
+# ── Runtime directories (ensure permissions for non-root user) ──────────────────
+RUN mkdir -p uploads outputs && \
+    groupadd -r appuser && useradd -r -g appuser appuser && \
+    chown -R appuser:appuser /app
+
+USER appuser
 
 # ── Port ──────────────────────────────────────────────────────────────────────
 EXPOSE 8000

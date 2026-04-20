@@ -160,6 +160,9 @@ def adaptive_quantization(notes, audio_path):
     y, sr = librosa.load(audio_path, sr=22050)
     tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
     beat_times = librosa.frames_to_time(beats, sr=sr)
+
+    # Bug 1 Fix: Calculate median beat duration
+    beat_duration = float(np.median(np.diff(beat_times))) if len(beat_times) > 1 else 0.5
     
     # We will compute 16th note subdivisions based on the dynamic beats
     # For now, as Stage 1 implementation, we snap to nearest beat division (1/4th of a beat)
@@ -171,14 +174,14 @@ def adaptive_quantization(notes, audio_path):
             return time_val
             
         if time_val <= beats_array[0]:
-            beat_duration = beats_array[1] - beats_array[0] if len(beats_array)>1 else 0.5
-            return beats_array[0] - (beat_duration) * round((beats_array[0]-time_val)/beat_duration * subdivision) / subdivision
+            beat_duration_local = beats_array[1] - beats_array[0] if len(beats_array)>1 else 0.5
+            return beats_array[0] - (beat_duration_local) * round((beats_array[0]-time_val)/beat_duration_local * subdivision) / subdivision
             
         idx = np.searchsorted(beats_array, time_val)
         if idx >= len(beats_array):
-            beat_duration = beats_array[-1] - beats_array[-2]
+            beat_duration_local = beats_array[-1] - beats_array[-2]
             dist = time_val - beats_array[-1]
-            return beats_array[-1] + beat_duration * round(dist/beat_duration * subdivision) / subdivision
+            return beats_array[-1] + beat_duration_local * round(dist/beat_duration_local * subdivision) / subdivision
             
         t0, t1 = beats_array[idx-1], beats_array[idx]
         grid_step = (t1 - t0) / subdivision
@@ -188,12 +191,18 @@ def adaptive_quantization(notes, audio_path):
         return t0 + (steps * grid_step)
         
     quantized = []
+    # Bug 2 Fix: Add max_dur and max_vel computation
+    max_dur = max([n['duration'] for n in notes]) if notes else 1.0
     max_vel = max([n['velocity'] for n in notes]) if notes else 1.0
     
     for n in notes:
         # Clamp bottom 10th percentile
         clamped_vel = max(n['velocity'], max_vel * 0.1)
-        snap_strength = min(1.0, (clamped_vel / max_vel) * 1.5)
+        
+        # Bug 2 Fix: Snap strength formula now uses duration and velocity
+        vel_norm = clamped_vel / max_vel
+        dur_norm = min(n['duration'], 2.0) / max(max_dur, 0.01)
+        snap_strength = min(1.0, (vel_norm * 0.6 + dur_norm * 0.4) * 1.4)
         
         q_onset_grid = find_nearest_grid(n['onset'], beat_times)
         q_offset_grid = find_nearest_grid(n['offset'], beat_times)
@@ -214,13 +223,14 @@ def adaptive_quantization(notes, audio_path):
         
     # Sort back by original time logical flow
     quantized.sort(key=lambda x: x['onset'])
-    return quantized
+    return quantized, beat_duration # Return beat_duration alongside quantized notes
 
-def cluster_notes(notes, window_ms=50):
+def cluster_notes(notes, beat_duration=0.5):
     """
-    Group events falling in ~50ms windows to form valid harmonic clusters.
+    Group events falling in ~10% of a beat to form valid harmonic clusters.
     """
-    print(f"[*] Clustering notes within {window_ms}ms windows...")
+    # Bug 1 Fix: Window proportional to tempo
+    print(f"[*] Clustering notes within adaptive windows (10% of beat)...")
     clusters = []
     if not notes:
         return clusters
@@ -228,7 +238,8 @@ def cluster_notes(notes, window_ms=50):
     current_cluster = [notes[0]]
     cluster_time = notes[0]['onset']
     
-    threshold = window_ms / 1000.0
+    # Bug 1 Fix: threshold is 10% of beat duration
+    threshold = beat_duration * 0.10
     
     for note in notes[1:]:
         if note['onset'] - cluster_time <= threshold:
@@ -751,9 +762,10 @@ def arrange(json_file, audio_file, output_file, instrument="Piano"):
     print("\n[STAGE 1]: Foundational Processing")
     cleaned = clean_notes(gated_notes, instrument=instrument)
     
-    # Needs actual audio for librosa beat tracking
-    quantized = adaptive_quantization(cleaned, audio_file)
-    clusters = cluster_notes(quantized, window_ms=50)
+    # Bug 1 Fix: Unpack beat_duration
+    quantized, beat_duration = adaptive_quantization(cleaned, audio_file)
+    # Pass beat_duration to cluster_notes
+    clusters = cluster_notes(quantized, beat_duration=beat_duration)
     
     # --- STAGE 2 & 3 ---
     print("\n[STAGE 2/3]: Harmonics & Hand Mapping")
@@ -772,12 +784,20 @@ def arrange(json_file, audio_file, output_file, instrument="Piano"):
     output_data = []
     
     for n in final_notes:
+        # Bug 3 Fix: Clean velocity output logic
+        vel_raw = n['velocity']
+        if vel_raw <= 1.0:
+            vel_out = int(vel_raw * 127)
+        else:
+            vel_out = int(vel_raw)
+        vel_out = max(1, min(127, vel_out))
+
         output_data.append({
             "time": n['onset'],
             "note": n['note'],
             "midi": n['midi'],
             "duration": n['duration'],
-            "velocity": int(n['velocity'] * 127) if n['velocity'] <= 1.0 else int(n['velocity']),
+            "velocity": vel_out,
             "hand": n.get('hand', 'right'),
             "role": n.get('role', 'harmony'),
             "phrase_start": n.get('phrase_start', False),
@@ -788,8 +808,14 @@ def arrange(json_file, audio_file, output_file, instrument="Piano"):
     # Sort chronologically
     output_data.sort(key=lambda x: x['time'])
     
+    # Bug 1 Fix: Wrap final output in dictionary
+    final_output = {
+        "beat_duration": beat_duration,
+        "notes": output_data
+    }
+    
     with open(output_file, 'w') as f:
-        json.dump(output_data, f, indent=2)
+        json.dump(final_output, f, indent=2)
         
     print(f"\n[INFO] Complete. Saved highly-structured output to {output_file}.")
 

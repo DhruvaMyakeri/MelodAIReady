@@ -37,7 +37,7 @@ def note_name_to_midi(name: str) -> int | None:
 def apply_todd_phrasing(notes, tempo):
     """
     Todd (1992): Phrase-end ritardando and phrase-internal acceleration.
-    - Last 3-4 notes before each phrase_start tag get duration stretched
+    - Last 3-4 notes before each phrase_start tag get onset delay applied
       with a cubic deceleration curve (ritardando).
     - Notes approaching the highest-velocity (climax) note per phrase
       get their timing nudged slightly early (-5ms to -8ms).
@@ -54,8 +54,6 @@ def apply_todd_phrasing(notes, tempo):
             phrase_end_indices.append(i)
     phrase_end_indices.append(len(notes) - 1)  # Final note is always a phrase end
 
-    sec_per_beat = 60.0 / max(tempo, 1)
-
     # Build phrase groups for climax detection
     phrase_groups = []
     start_idx = 0
@@ -67,12 +65,12 @@ def apply_todd_phrasing(notes, tempo):
         if not phrase:
             continue
 
-        # ── Ritardando: stretch final 3-4 notes ──
-        rit_multipliers = [1.18, 1.14, 1.08, 1.0]  # oldest-to-newest
+        # Bug 4 Fix: Tag notes with onset delay instead of duration multiplier
+        rit_delays = [0.0, 0.018, 0.036, 0.060]  # seconds of onset delay, oldest to newest
         rit_window = phrase[-4:] if len(phrase) >= 4 else phrase
         for i, note in enumerate(rit_window):
-            mult = rit_multipliers[max(0, 4 - len(rit_window) + i)]
-            note['_rit_mult'] = mult
+            delay = rit_delays[max(0, 4 - len(rit_window) + i)]
+            note['_rit_onset_delay'] = delay
 
         # ── Extended phrase-end decay (+0.3s on final note) ──
         phrase[-1]['_phrase_end_decay'] = True
@@ -96,8 +94,15 @@ def main():
     parser.add_argument("--tempo",      type=float, default=120.0,    help="BPM (default: 120)")
     args = parser.parse_args()
 
+    # Bug 5 Fix: Parse new JSON format
     with open(args.input, "r") as f:
-        notes = json.load(f)
+        raw = json.load(f)
+    if isinstance(raw, dict) and "notes" in raw:
+        notes = raw["notes"]
+        beat_duration = float(raw.get("beat_duration", 0.5))
+    else:
+        notes = raw
+        beat_duration = 60.0 / max(args.tempo, 1)
 
     # ── Sort chronologically and apply Todd phrasing ──
     notes.sort(key=lambda x: x['time'])
@@ -109,6 +114,7 @@ def main():
     instrument = pretty_midi.Instrument(program=program, name=args.instrument)
 
     skipped = 0
+    last_note_per_pitch = {}
     for entry in notes:
         # Prefer direct midi field (updated by voice leading optimizer)
         midi_num = entry.get("midi")
@@ -123,9 +129,8 @@ def main():
         duration = float(entry["duration"])
         role     = entry.get("role", "harmony")
 
-        # ── Todd (1992): Apply ritardando duration stretch ──
-        rit_mult = entry.get('_rit_mult', 1.0)
-        duration *= rit_mult
+        # Bug 4 Fix: Apply onset delay instead of duration multiplier
+        start += entry.get('_rit_onset_delay', 0.0)
 
         # ── Todd (1992): Pre-climax timing nudge (rush toward peak) ──
         if entry.get('_pre_climax_nudge', False):
@@ -142,21 +147,22 @@ def main():
             
         start += (offset_ms / 1000.0)
 
-        # ── Acoustic Decay by Musical Role + Todd phrase-end extension ──
+        # Bug 5 Fix: Tempo-scaled decay tails
         if role == 'melody':
-            decay_tail = 0.6
+            decay_tail = min(0.5, beat_duration * 0.45)
         elif role == 'bass':
-            decay_tail = 0.4
+            decay_tail = min(0.35, beat_duration * 0.35)
         else:
-            decay_tail = 0.3
+            decay_tail = min(0.25, beat_duration * 0.25)
 
         if entry.get('_phrase_end_decay', False):
-            decay_tail += 0.3  # Extra ring-out on phrase endings
+            decay_tail += min(0.25, beat_duration * 0.5)
             
         end = start + duration + decay_tail
 
-        raw_vel = float(entry.get("velocity", 80)) # Might be 0-1.0 or 0-127
-        if raw_vel <= 1.0: raw_vel *= 127
+        # Bug 3 Fix: Remove conditional scaling
+        raw_vel = float(entry.get("velocity", 80))
+        raw_vel = max(1.0, min(127.0, raw_vel))
             
         # Map dynamic velocity ranges
         norm_v = min(1.0, raw_vel / 127.0)
@@ -190,12 +196,12 @@ def main():
         # Clamp velocity bounds
         vel = max(1, min(127, vel))
 
-        note = pretty_midi.Note(
-            velocity=vel,
-            pitch=midi_num,
-            start=start,
-            end=end
-        )
+        note = pretty_midi.Note(velocity=vel, pitch=midi_num, start=start, end=end)
+        if midi_num in last_note_per_pitch:
+            prev = last_note_per_pitch[midi_num]
+            if prev.end > start:
+                prev.end = max(prev.start + 0.01, start - 0.005)
+        last_note_per_pitch[midi_num] = note
         instrument.notes.append(note)
 
     midi.instruments.append(instrument)

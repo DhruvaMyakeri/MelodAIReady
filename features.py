@@ -66,7 +66,7 @@ def extract_features(y, sr):
 
     # ─── ZERO CROSSING RATE (TEXTURE) ──────────────
     zcr = librosa.feature.zero_crossing_rate(y)
-    features["zero_crit ossing_rate"] = float(np.mean(zcr))
+    features["zero_crossing_rate"] = float(np.mean(zcr))
 
     # ─── CHROMA (PITCH / KEY HINT) ─────────────────
     chroma = librosa.feature.chroma_stft(y=y, sr=sr)
