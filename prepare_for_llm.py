@@ -124,6 +124,7 @@ def get_notes_in_window(note_events, start_s, end_s):
                 "midi":      int(pitch),
                 "onset":     round(float(onset), 3),
                 "offset":    round(float(offset), 3),
+                "duration":  round(float(offset - onset), 3),
                 "velocity":  round(float(velocity), 3)
             })
     return sorted(notes_in, key=lambda x: x["onset"])

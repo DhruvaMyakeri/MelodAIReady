@@ -130,9 +130,9 @@ export default function ControlsPanel({ config, onChange, hasFile, onSubmit, isS
           className={`submit-btn${!hasFile || isSubmitting ? ' disabled' : ''}`}
           onClick={onSubmit}
           disabled={!hasFile || isSubmitting}
-          aria-label="Run MelodAI pipeline"
+          aria-label="Run Reify.ai pipeline"
         >
-          {isSubmitting ? 'LAUNCHING...' : 'RUN MELODAI →'}
+          {isSubmitting ? 'LAUNCHING...' : <>RUN <span className="reify-brand">REIFY.AI</span> →</>}
         </button>
         <div className="caveat-note" style={{ bottom: '-22px', right: '5px', fontWeight: 400, fontSize: '18px', color: '#00FFE0', opacity: 0.5, transform: 'rotate(1.5deg)' }}>
           this might take a sec—

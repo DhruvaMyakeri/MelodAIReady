@@ -72,7 +72,7 @@ export default function App() {
           <div className="hero-stamp">
             <span>[ML-POWERED]</span>
           </div>
-          <h1 className="hero-title">MelodAI</h1>
+          <h1 className="hero-title reify-brand">Reify.ai</h1>
           <div className="hero-sub">
             AUDIO INTELLIGENCE. NO CLOUD. NO COMPROMISE.
           </div>
@@ -128,7 +128,7 @@ export default function App() {
 
         {/* ─── FOOTER ───────────────────────────────────────────────── */}
         <footer className="site-footer">
-          <span>MELODAI</span>
+          <span className="reify-brand">REIFY.AI</span>
           <span className="stamp-badge">[NO RULES. NOISE.]</span>
           <span>CPU-ONLY · OFFLINE · OPEN SOURCE</span>
         </footer>

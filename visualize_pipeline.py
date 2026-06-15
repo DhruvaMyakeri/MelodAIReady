@@ -50,9 +50,20 @@ def __normalize_notes(data, is_arranged=False):
                                   'role': 'other'})
         elif 'notes' in data:
             for n in data['notes']:
-                notes.append({'pitch': n.get('pitch', 60), 'start_time': n.get('start', 0), 'end_time': n.get('end', 0),
-                              'velocity': n.get('velocity', 100), 'role': n.get('role', 'other'),
-                              'phrase_id': n.get('phrase_id', -1), 'tension': n.get('tension', 0.0)})
+                pitch = n.get('pitch', n.get('midi', 60))
+                start = n.get('start_time', n.get('start', n.get('time', 0)))
+                dur = n.get('duration', 0.1)
+                end = n.get('end_time', n.get('end', start + dur))
+                notes.append({
+                    'pitch': pitch,
+                    'start_time': start,
+                    'end_time': end,
+                    'velocity': n.get('velocity', 100),
+                    'role': n.get('role', 'other'),
+                    'phrase_id': n.get('phrase_id', -1),
+                    'tension': n.get('tension', 0.0),
+                    'phrase_start': n.get('phrase_start', False)
+                })
     elif isinstance(data, list):
         for n in data:
             pitch = n.get('pitch', n.get('midi', 60))
@@ -336,12 +347,27 @@ def plot_fig11_todd_phrasing(midi_file, arr_data, save_dir):
     arr_idx = 0
     assigned = []
     
+    # Sort for faster matching
+    arr_notes_sorted = sorted(arr_data, key=lambda x: x.get('start_time', 0))
+    arr_times = np.array([n.get('start_time', 0) for n in arr_notes_sorted])
+
     for mn in sorted(midi_notes, key=lambda x: x.start):
-        # find closest arranged note
-        closest = min(arr_data, key=lambda x: abs(x.get('start_time',0) - mn.start))
-        pid = closest.get('phrase_id', -1)
-        if pid != -1:
-            assigned.append({'vel': mn.velocity, 'start': mn.start, 'phrase': pid})
+        # find closest arranged note using binary search
+        idx = np.searchsorted(arr_times, mn.start)
+        best_cand = None
+        min_dist = float('inf')
+        
+        # check neighborhood
+        for k in range(max(0, idx-1), min(len(arr_times), idx+2)):
+            dist = abs(arr_times[k] - mn.start)
+            if dist < min_dist:
+                min_dist = dist
+                best_cand = arr_notes_sorted[k]
+        
+        if best_cand:
+            pid = best_cand.get('phrase_id', -1)
+            if pid != -1:
+                assigned.append({'vel': mn.velocity, 'start': mn.start, 'phrase': pid})
             
     phrases = {}
     for item in assigned:
@@ -349,10 +375,10 @@ def plot_fig11_todd_phrasing(midi_file, arr_data, save_dir):
         phrases[item['phrase']].append(item)
         
     pids = sorted(list(phrases.keys()))[:6] # up to 6
+    pids = [p for p in pids if len(phrases[p]) >= 4] # Filter phrases with < 4 notes
     if not pids: return None
     
-    fig, axs = plt.subplots(2, len(pids), figsize=(4 * len(pids), 8), sharey='row')
-    if len(pids) == 1: axs = [[axs[0]], [axs[1]]]
+    fig, axs = plt.subplots(2, len(pids), figsize=(4 * len(pids), 8), sharey='row', squeeze=False)
     
     fig.suptitle("Phrasing Dynamics Model — Todd (1992)", fontsize=16, weight='bold')
     
@@ -407,8 +433,8 @@ def plot_fig12_summary(save_dir):
     fig = plt.figure(figsize=(19.2, 10.8), dpi=100)
     fig.patch.set_facecolor(colors['bg_card'])
     
-    gs = gridspec.GridSpec(2, 2, height_ratios=[1, 1], wspace=0.1, hspace=0.3)
-    fig.suptitle("Algorithms Behind MelodAI", fontsize=42, fontweight='bold', color='white', y=0.96)
+    gs = gridspec.GridSpec(2, 2, height_ratios=[1, 1], wspace=0.15, hspace=0.4)
+    fig.suptitle("Algorithms Behind MelodAI", fontsize=48, fontweight='bold', color='white', y=0.98)
     fig.text(0.5, 0.02, "@MelodAI_Research", ha='center', fontsize=20, color='#cccccc')
     
     quads = [
@@ -432,10 +458,10 @@ def plot_fig12_summary(save_dir):
         else:
             ax.text(0.5, 0.3, f"[{fpath} missing]", color='red', ha='center', fontsize=16)
             
-        txt_y = -0.1
+        txt_y = -0.15
         for b in bullets:
-            ax.text(0.05, txt_y, f"• {b}", color='#cccccc', fontsize=18, transform=ax.transAxes)
-            txt_y -= 0.1
+            ax.text(0.05, txt_y, f"• {b}", color='#cccccc', fontsize=20, transform=ax.transAxes, weight='medium')
+            txt_y -= 0.12
             
     out = Path(save_dir) / 'fig12_research_summary.png'
     fig.savefig(out, dpi=100, bbox_inches='tight')
